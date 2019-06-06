@@ -1,0 +1,21 @@
+baseurl = "https://blog.danielteycheney.com"
+languageCode = "en"
+title = "Daniel Teycheney"
+theme = "hugo-theme-cactus-plus"
+
+[params]
+name = "Daniel Teycheney"
+description = "Technical Web Blog"
+bio = "networking | automation"
+twitter = "danielteycheney"
+enableRSS = true
+
+iconFont = "font-awesome"
+socialIconStyle = "circle"
+
+customCSS = ["css/fixes.css"]
+
+[social]
+twitter-square = "https://twitter.com/danielteycheney"
+github-square = "https://github.com/writememe"
+linkedin-square = "https://www.linkedin.com/in/danielfjteycheney"
