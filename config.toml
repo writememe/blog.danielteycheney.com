@@ -1,4 +1,4 @@
-baseurl = "https://blog.danielteycheney.com"
+baseurl = "https://blog.danielteycheney.com/"
 languageCode = "en"
 title = "Daniel Teycheney"
 theme = "hugo-theme-cactus-plus"
