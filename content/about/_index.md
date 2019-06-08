@@ -24,8 +24,7 @@ Below are some points about my career:
 - Last 11 years in networking  
 - Last 5 years in network consulting  
 - First started networking by completing the Cisco Networking Academy course in 2002 and 2003 at high school  
-- Lived in London for 1.5 years
-
+- Lived in London for 1.5 years  
   
 Below are some of weird/interesting experiences I've had in my career:  
 
