@@ -1,6 +1,6 @@
 +++
 title = "Building Network Automation Solutions Review"
-date = 2019-06-14T19:25:35+10:00
+date = 2019-06-15T13:33:35+10:00
 tags = ["non-technical"]
 categories = [""]
 draft = false
@@ -236,7 +236,7 @@ Feel free to checkout my Github [repo](https://github.com/writememe/BlgNetAutoSo
 
 To summarise, I found the Building Network Automation Solutions course to be a worthy investment of my time and money.
 
-Not only have I learned numerous new skills, I have learned many other invaluable lessons on how to think about automation, how to develop solutions and how to build robust solutions.
+Not only have I learned numerous new skills, I have learned many other invaluable lessons on how to **think about automation**, how to **develop solutions** and how to **build robust solutions**.
 
 The entire experience has given me a fresh impetus to continue the network automation journey and continuously improve and refine my skills.
 
