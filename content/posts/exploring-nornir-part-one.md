@@ -54,7 +54,7 @@ Compared to Ansible, this feature alone can save a significant amount of time.
 
 Nornir provides the ability to apply complex 
 [filtering](https://nornir.readthedocs.io/en/stable/tutorials/intro/inventory.html#Filtering-the-inventory) to your
-inventory, allowing you be precise yet elegant in 
+inventory, allowing you to be precise yet elegant in 
 classifying similar hosts to perform some tasks.
 
 In future, I will dedicate a post to filtering in Nornir to solve some automation challenges.
