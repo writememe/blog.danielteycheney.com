@@ -363,7 +363,7 @@ It contains answers to questions such as:
 -**_Has IPv6 been configured on any devices?_**  
 -**_What other network devices might be physically connected to these devices which we were not previously aware of?_** 
   
-Being Excel, this data is easy to, format interpret and convey to other parts of the IT team such as procurement, change management or upper management.
+Being Excel, this data is easy to format, interpret and convey to other parts of the IT team such as procurement, change management or upper management.
 
 This function uses a Python module called [Openpyxl](https://openpyxl.readthedocs.io/en/stable/tutorial.html) perform the Excel
 activities. By using Nornir which is written in Python, we can leverage the benefits of integrating existing 
