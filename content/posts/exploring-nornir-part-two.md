@@ -153,8 +153,8 @@ Now that the data is populated, we can leverage this structure to execute both P
 
 | Python script| Description|
 | ------------ |-----------|
-| day-one-toolkit.py | Configuration collection and detailed retrieval of state and storage in text/JSON files for all devices in the inventory. |
-| collection-toolkit.py | Summarised discovery of key information and storage into an Excel workbook for all devices in the inventory.|
+| [day-one-toolkit.py](https://github.com/writememe/day-one-net-toolkit/blob/master/day-one-toolkit.py) | Configuration collection and detailed retrieval of state and storage in text/JSON files for all devices in the inventory. |
+| [collection-toolkit.py](https://github.com/writememe/day-one-net-toolkit/blob/master/collection-toolkit.py) | Summarised discovery of key information and storage into an Excel workbook for all devices in the inventory.|
 
 Both scripts leverage a simple filter to assign the devices in the inventory to a variable, which is used for the main functions in each script:
 ```
