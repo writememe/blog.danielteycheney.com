@@ -10,7 +10,7 @@ Below is the procedure to get this repository working:
 
 Clone this repo, plus the theme dependency using the following command:  
 
-```python
+```commandline
 git clone --recursive https://github.com/writememe/blog.danielteycheney.com.git
 ```
 
