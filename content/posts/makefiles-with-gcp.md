@@ -1,13 +1,13 @@
 +++
 title = "Makefiles With Google Cloud Platform"
-date = 2019-12-20T06:03:11+11:00
+date = 2019-12-22T06:03:11+11:00
 tags = ["make", "gcp"]
 categories = ["technical"]
 draft = false
 +++
-# Makefiles with GCP
+# Makefiles with Google Cloud Platform
 
-_This post will explore my first attempt at creating and using a Makefile to create a Google Cloud Platform (GCP) lab solution. The specifics of GCP are not detailed in this post._
+_This post will explore my first attempt at creating and using a Makefile to create a Google Cloud Platform (GCP) lab solution._
 
 ## Background
 
@@ -15,7 +15,7 @@ After recently completing my Amazon Web Services (AWS) Solutions Architect - Ass
 
 Being late to the cloud has arguably left me at a disadvantage, however it means I’m not particularly biased (yet) to one offering over another. 
 
-Coupled with this, I maintain a spiralling list of technologies or subjects aptly named “Need to learn”. One of those things was using Makefiles to automate deployments. 
+Coupled with this, I maintain an ever growing list of technologies or subjects aptly named “Like to learn”, where I discover subjects I feel would be good to learn. One of those things was using Makefiles to automate deployments. 
 
 
 ## Scenario
@@ -72,7 +72,7 @@ _*Makefiles give you an explicit and simple dependency tree making it easy to fo
 
 ### Makefile - Take One
 
-Initially, I decomposed the two problems above with the intent of addressing defining variables first. As a result, I ended up with a monolithic single target in the Makefile below:
+Initially, I broke down the two problems above with the intent of addressing defining variables first. As a result, I ended up with a monolithic single target in the Makefile below:
 
 ```console
 # Populate with your variables
@@ -253,7 +253,7 @@ Furthermore, it’s easy for someone who has no knowledge about GCP to comprehen
 
 ## Conclusion
 
-Makefiles are a OS independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they are invoked and executed from a single file.  
+Makefiles are a operating system independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they are invoked and executed from a single file.  
 
 I can see great potential in using them for future projects and in fact used one to publish this blog post.
 
@@ -266,3 +266,5 @@ Below is a link to the above Makefile, along with a couple of other great resour
 [Mindlessness - Makefile tutorial with walkthrough](https://blog.mindlessness.life/2019/11/17/the-language-agnostic-all-purpose-incredible-makefile.html)
 
 [Packet Flow - Makefile tutorial for Network Automation](https://www.packetflow.co.uk/netdevops-ci-cd-with-ansible-github-jenkins-and-cisco-virl-part-2-the-components-tools/#make)
+
+Thanks for reading.
