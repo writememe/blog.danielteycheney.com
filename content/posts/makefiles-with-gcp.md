@@ -253,12 +253,13 @@ Furthermore, it’s easy for someone who has no knowledge about GCP to comprehen
 
 ## Conclusion
 
-Makefiles are a OS independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they are invoked and executed from a single file. 
+Makefiles are a OS independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they are invoked and executed from a single file.  
 
+I can see great potential in using them for future projects and in fact used one to publish this blog post.
 
 ## More Information
 
-Below is a link to the above Makefile, along with a couple of other great resources.
+Below is a link to the above Makefile, along with a couple of other great resources:
 
 [My Lab solution with Makefile (Github)](https://github.com/writememe/gcp-cloud-labs/blob/master/01-basic-compute-lab/EXERCISE.md)
 
