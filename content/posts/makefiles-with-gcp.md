@@ -7,7 +7,7 @@ draft = false
 +++
 # Makefiles with GCP
 
-_This post will explore my first attempt at creating and using a Makefile to create a Google Cloud Platform (GCP) lab solution._
+_This post will explore my first attempt at creating and using a Makefile to create a Google Cloud Platform (GCP) lab solution. The specifics of GCP are not detailed in this post._
 
 ## Background
 
@@ -20,9 +20,9 @@ Coupled with this, I maintain a spiralling list of technologies or subjects aptl
 
 ## Scenario
 
-As part of completing the [Google Certified Associate Cloud Engineer](https://acloud.guru/learn/gcp-certified-associate-cloud-engineer) by A Cloud Guru, there are labs which you need to solve.
+As part of completing the [Google Certified Associate Cloud Engineer](https://acloud.guru/learn/gcp-certified-associate-cloud-engineer) course by A Cloud Guru, there are labs which you need to solve.
 
-The lab is essentially implementing a solution from using knowledge gained from prior lessons to address the requirements of the lab. This solution can be implemented either via the GUI or via Cloud Shell. As a proponent of automation, ‘click-ops’ was not an avenue I was interested in pursuing.
+The lab is essentially implementing a solution from using knowledge gained from prior lessons to address the requirements of the lab. This solution can be implemented either via the GUI or via Cloud Shell. As a proponent of automation, I decided to avoid the ‘click-ops’ and attempt the Cloud Shell option.
 
 So, I decided to solve this lab using a Makefile and executing commands using Google Cloud Shell.
 
@@ -39,7 +39,7 @@ Azure have a similar web-based offering as well, although [slightly different](h
 
 ### What is possible from the Cloud Shell?
 
-Good question, a lot! From within the cloud shell, you can perform some common development and automation tasks such as:
+Suprisingly, quite a lot. From within the Cloud Shell, you can perform some common development and automation tasks such as:
 
 - Clone a repository using git, make changes and push changes back to the master branch
 - Make directories/files to organise work from within your cloud shell
@@ -52,24 +52,27 @@ Short of installing my own IDE, I haven’t found anything yet which has discour
 
 There are two main ways to find the commands:
 
-- Perform the action through the GUI and prior to creating or deleting, there is a link provided to the equivalent *REST* or *command line*. Clicking on the *command line* will give you all the gcloud commands required to create it via the command line. This [link](https://cloud.google.com/shell/docs/running-gcloud-commands) is a good resource.
+- Perform the action through the GUI and prior to creating or deleting, there is a link provided to the equivalent **REST** or **command line**. Clicking on the **command line** will give you all the gcloud commands required to create it via the command line. This [link](https://cloud.google.com/shell/docs/running-gcloud-commands) is a good resource.
 - Refer to the [gcloud Software Development Toolkit (SDK)](https://cloud.google.com/sdk/gcloud/reference/). Being Google, well the searches are alarmingly accurate and intuitive!
 
 ### Why use a Makefile?
 
 The lab presented two main problems which would be difficult to update or maintain:
 
-1) There are variables repeated numerous times throughout the list of commands. Maintaining and updating multiple entries of this duplicate data should be handled in one location.  
-2) The gcloud commands have dependencies on other resources being created or present, prior to them being executed. For example, a project must be created prior to being able to create a resource within that project.
 
-These problems are addressed by using a Makefile. A Makefile:
+#### Problem One
+There are variables repeated numerous times throughout the list of commands. Maintaining and updating multiple entries of this duplicate data should be handled in one location.  
+#### Solution
+_*Makefiles have a simple way of defining and using variables which are easy to be interpreted.*_
+#### Problem Two 
+The gcloud commands have dependencies on other resources being created or present, prior to them being executed. For example, a project must be created prior to being able to create a resource within that project.
+#### Solution
+_*Makefiles give you an explicit and simple dependency tree making it easy to follow the logic within the Makefile.*_
 
-- Has a simple way of defining and using variables which are easy to be interpreted.
-- Gives you an explicit and simple dependency tree.
 
 ### Makefile - Take One
 
-Initially, I decomposed the two problems above with the intent of addressing defining variables once. As a result, I ended up with a monolithic single target below:
+Initially, I decomposed the two problems above with the intent of addressing defining variables first. As a result, I ended up with a monolithic single target in the Makefile below:
 
 ```console
 # Populate with your variables
@@ -131,6 +134,7 @@ release:
 ```
 
 Whilst this worked, it wasn’t intuitive nor reusable. For example, If I simply wanted to deploy another instance, the current structure would error out on the create project commands given that project would already be created. 
+
 ### Makefile - Take Two
 
 In the second attempt, I restructured the Makefile with numerous targets so that I had greater flexibility using the Makefile below:
@@ -223,7 +227,7 @@ delete-project:
 	gcloud projects delete $(PROJECT_ID) --quiet
 
 ```
-As a result, there are now four options on how to execute the Makefile:
+Focusing on a specific excerpt of the Makefile, there are now four options on how to execute the Makefile:
 
 ```console
 <excerpt omitted>
@@ -243,20 +247,21 @@ remove: unset-project delete-project
 - `make` will deploy the project-baseline and the compute functions to build the solution for the project.
 - `make remove` will delete the entire project.
 
-Comparing this Makefile to the first attempt, it’s more intuitive as to what dependencies are required for each portion of the solution.   
+Comparing this Makefile to the first attempt, it’s more intuitive as to what dependencies are required for each portion of the solution. 
 
 Furthermore, it’s easy for someone who has no knowledge about GCP to comprehend what are the dependencies of the solution.
 
 ## Conclusion
 
+Makefiles are a OS independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they are invoked and executed from a single file. 
 
 
 ## More Information
 
-For more information, check out the following:
+Below is a link to the above Makefile, along with a couple of other great resources.
 
-[Lab solution with Makefile (Github)](https://github.com/writememe/gcp-cloud-labs/blob/master/01-basic-compute-lab/EXERCISE.md)
+[My Lab solution with Makefile (Github)](https://github.com/writememe/gcp-cloud-labs/blob/master/01-basic-compute-lab/EXERCISE.md)
 
-[Makefile tutorial with walkthrough](https://blog.mindlessness.life/2019/11/17/the-language-agnostic-all-purpose-incredible-makefile.html)
+[Mindlessness - Makefile tutorial with walkthrough](https://blog.mindlessness.life/2019/11/17/the-language-agnostic-all-purpose-incredible-makefile.html)
 
 [Packet Flow - Makefile tutorial for Network Automation](https://www.packetflow.co.uk/netdevops-ci-cd-with-ansible-github-jenkins-and-cisco-virl-part-2-the-components-tools/#make)
