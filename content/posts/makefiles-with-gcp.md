@@ -1,6 +1,6 @@
 +++
 title = "Makefiles With Google Cloud Platform"
-date = 2019-12-22T06:03:11+11:00
+date = 2020-01-06T07:03:11+11:00
 tags = ["make", "gcp"]
 categories = ["technical"]
 draft = false
@@ -15,7 +15,7 @@ After recently completing my Amazon Web Services (AWS) Solutions Architect - Ass
 
 Being late to the cloud has arguably left me at a disadvantage, however it means I’m not particularly biased (yet) to one offering over another. 
 
-Coupled with this, I maintain an ever growing list of technologies or subjects aptly named “Like to learn”, where I discover subjects I feel would be good to learn. One of those things was using Makefiles to automate deployments. 
+Coupled with this, I maintain an ever growing [list of technologies or subjects](https://github.com/writememe/learn-list/blob/master/README.md), where I discover subjects I feel would be good to learn. One of those things was using Makefiles to automate deployments. 
 
 
 ## Scenario
@@ -103,7 +103,7 @@ release:
 	gcloud beta billing accounts --project=$(PROJECT_ID) list
 	# Enable compute service
 	gcloud services enable compute.googleapis.com
-	#Add gcloud services compute default region and zone using variables above
+	# Add gcloud services compute default region and zone using variables above
 	gcloud compute project-info add-metadata \
 	    --metadata google-compute-default-region=$(DEFAULT_REGION),google-compute-default-zone=$(DEFAULT_ZONE)
 	# Check that default region and zone is configured
@@ -253,7 +253,7 @@ Furthermore, it’s easy for someone who has no knowledge about GCP to comprehen
 
 ## Conclusion
 
-Makefiles are a operating system independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they are invoked and executed from a single file.  
+Makefiles are an operating system independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they are invoked and executed from a single file.  
 
 I can see great potential in using them for future projects and in fact used one to publish this blog post.
 

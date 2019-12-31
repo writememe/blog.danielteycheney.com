@@ -6,7 +6,7 @@ theme = "hugo-theme-cactus-plus"
 [params]
 name = "Daniel Teycheney"
 description = "Technical Web Blog"
-bio = "networking | automation"
+bio = "networking | cloud | automation"
 twitter = "danielteycheney"
 enableRSS = true
 
