@@ -1,6 +1,6 @@
 +++
 title = "Makefiles With Google Cloud Platform"
-date = 2020-01-06T07:03:11+11:00
+date = 2020-01-04T20:03:11+10:00
 tags = ["make", "gcp"]
 categories = ["technical"]
 draft = false
