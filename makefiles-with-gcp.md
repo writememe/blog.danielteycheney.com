@@ -1,6 +1,6 @@
 +++
 title = "Makefiles With Google Cloud Platform"
-date = 2020-01-04T15:22:01+11:00
+date = 2020-01-04T20:03:11+10:00
 tags = ["make", "gcp"]
 categories = ["technical"]
 draft = false
@@ -268,4 +268,3 @@ Below is a link to the above Makefile, along with a couple of other great resour
 [Packet Flow - Makefile tutorial for Network Automation](https://www.packetflow.co.uk/netdevops-ci-cd-with-ansible-github-jenkins-and-cisco-virl-part-2-the-components-tools/#make)
 
 Thanks for reading.
-
