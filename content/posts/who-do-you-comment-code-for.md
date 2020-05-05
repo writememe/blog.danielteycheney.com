@@ -3,14 +3,14 @@ title = "Who do you comment code for?"
 date = 2020-05-05T19:16:09+10:00
 tags = ["technical"]
 categories = ["programming"]
-draft = true
+draft = false
 +++
 
 Recently, I've been working with some new programming languages. I've been looking at reference code, as well as reading documentation to develop solutions or features for my new role.
 
 Naturally, I had some questions about the language itself and why certain solutions were chosen over others.
 
-Sometimes, I received a clear, concise and articulated reason. Other times, this was meant with *"I don't know why that's there, person x implemented it before I started"*. And sometimes, the developer couldn't remember why that code was there...
+Sometimes, I received a clear, concise and articulated reason. Other times, this was met with *"I don't know why that's there, person x implemented it before I started"*. And sometimes, the programmer couldn't remember why that code they wrote was there...
 
 These experiences aren't unique and I fully anticipate to have this happen again in future. So, it's with this that I asked myself, who do you comment code for?
 
@@ -41,6 +41,8 @@ Next, I comment code for my fellow colleagues. The reasoning for commenting for 
 
 
 ## Example code ##
+
+I try to be as detailed as possible when commenting code. Whilst this might seem like a waste of effort, it allows me to leave the code and the original intent in a legible state. This can be picked up in a weeks time, but the longer it's left, the higher the chance that context and meaning will be lost without those detailed comments.
 
 The example code below is a Python function that I had written nearly two years ago:
 
