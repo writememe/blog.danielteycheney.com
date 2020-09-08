@@ -82,7 +82,7 @@ They have also weighed up the situation at hand and they have the same five opti
 4. Pursue options 1 to 3.
 5. Maintain status quo.
 
- As well take choosing Option 1, Person B spends a greater amount of time analysing Option 2 and 3. Even though these options will cause additional problems (considerable amount of work, high amount of discomfort, extra curricular demands), the problem of maintaining the status quo is no longer a problem they want to have.  
+ As well as choosing Option 1, Person B spends a greater amount of time analysing Option 2 and 3. Even though these options will cause additional problems (considerable amount of work, high amount of discomfort, extra curricular demands), the problem of maintaining the status quo is no longer a problem they want to have.  
  
  They also accept that **their promotion is their problem** and by having more control and accountability over the success of the solution to that problem, will most likely lead to a better outcome. After weighing all the options, Person B has decided to pursue Option 4.
 
