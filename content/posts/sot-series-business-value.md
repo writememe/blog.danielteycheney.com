@@ -38,7 +38,7 @@ Going through this diagram from top to bottom, the components are described belo
 
 #### Customer Question/Problem
 
-The customer will have a problem, or a question that they have come to your business about. I will use these interchange these terms throughout the rest of this post as they mean the same thing in the context of this post. This is where one would receipt the problem, ask any qualification questions or clarify what would be deemed successful for the customer. These problems or questions are rarely technical, and are often so abstract from the work needed to provide a solution. 
+The customer will have a problem, or a question that they have come to your business about. I will use these interchange these terms of problem and question throughout the rest of this post as they mean the same thing in the context of this post. This is where one would receipt the problem, ask any qualification questions or clarify what would be deemed successful for the customer. These problems or questions are rarely technical, and are often so abstract from the work needed to provide a solution. 
 
 For example, _I'd like to buy a used European electric car today, do you have any which you can show me?_
 
@@ -99,7 +99,7 @@ Next, we break to break down these business questions further into more specific
 
 Starting with the first business question:
 
-> What dishes we offer that are currently ;ocally sourced AND vegetarian?
+> What dishes we offer that are currently locally sourced AND vegetarian?
 
 We would need a query to find all dishes which are categorised as locally sourced AND vegetarian. In addition to this query, we would need to lookup the recipe details for each match and retrieve a list of ingredients needed to make each dish.
 
