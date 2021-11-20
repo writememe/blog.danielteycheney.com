@@ -36,7 +36,7 @@ jobs:
                   aws s3 sync --acl "public-read" public/ ${{ secrets.AWS_S3_BUCKET }}
             - name: Update Google sitemap
               run: |
-                  curl --silent "http://www.google.com/ping?sitemap=${{ secrets.SITEMAP_URL }}"
+                  curl --silent ${{ secrets.SITEMAP_URL }}
             - name: Invalidate Cloudfront cache
               run: |
                   aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_ID }} --paths "/*"
