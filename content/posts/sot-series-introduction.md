@@ -1,9 +1,9 @@
 +++
 title = "Source of Truth Series - Introduction"
-date = 2021-11-13T18:06:31+11:00
+date = 2021-11-22T18:06:31+11:00
 tags = ["sot"]
 categories = ["source-of-truth"]
-draft = false
+draft = true
 +++
 
 # Introduction
@@ -13,9 +13,9 @@ discussed and debated at the tooling level, however I aim to take a holistic app
 
 ## Background
 
-The subject of SoT comes up frequently, due to the nature of the work. In order to build and provide platforms for other people to consume, data governance, integrity and accuracy becomes a primary concern for automation professionals.
+In order to build and provide platforms for other people to consume, data governance, integrity and accuracy becomes a primary concern for automation professionals. This is where the subject of SoT is regularly discussed.
 
-Often, this problem manifests into their world as they are attempting to objectify, document and automate business processes. Existing, ad-hoc data management problems managed by humans do not scale with automation, so it often feels like a problem they are looking to get resolved.
+Often, this problem manifests into an automators world as they are attempting to objectify, document and automate business processes. Existing, ad-hoc data management problems managed by humans do not scale with automation, so it often feels like a problem they are looking to get resolved.
 
 At the time of writing, there are some considerations and subjects I'd like to address:
 

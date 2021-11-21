@@ -1,6 +1,6 @@
 +++
 title = "Source of Truth Series - Business Value"
-date = 2021-11-13T18:31:42+11:00
+date = 2021-11-18T18:31:42+11:00
 tags = ["sot"]
 categories = ["source-of-truth"]
 draft = false
@@ -57,8 +57,8 @@ Expanding on the example above, we may have two business questions:
 
 Whilst there are often other things we need to do to solve a customers problem, we are going to scope this example to needed some sort of business data to make a decision or offer a solution. In this phrase, we break down the business question into a smaller queries which we make of a SoT to find low level detail about our business data. These example queries could be:
 
-- Query One: Find all European used cars which are electric
-- Query Two: Find all cars which match Query One, and have the status of READY FOR SALE
+1) **Query One:** Find all European used cars which are electric
+2) **Query Two:** Find all cars which match Query One, and have the status of READY FOR SALE
 
 #### SoT
 
@@ -86,7 +86,7 @@ Now, using the method introduced above, let's start to break down the customer q
 
 > What **locally sourced**, **vegetarian** dishes do you have **tonight**?
 
-Translating this question, it appears that there are three technical questions, which we need answers for to inform the customer. These are:
+Translating this question, it appears that there are two technical questions, which we need answers for to inform the customer. These are:
 
 - What dishes we offer that are locally sourced AND vegetarian?
 - Are these dishes available for tonight's service?
@@ -112,85 +112,86 @@ Now we have a mapping or a process to determine the answer or solution to the or
 ![Final Query](/images/img/SoT-Concepts-Final-Query.png)
 
 
-We have now explained the business process and what properties our SoT will need to address to solve our customer problem.
+We have now explained the business process and what properties our SoT will need to address to solve our customer problem. In the proceeding section, we will compare two examples
+of retrieving the SoT data, so that we can answer the customers original intention.
 
 ### Non-SoT Method
 
+In this first example, there is no SoT in place at all. Let's walkthrough the interactions and high-level steps at play:
 
-##### Non SoT method
+1) Waiter asks cooking staff member the two business questions `What dishes we offer that are locally sourced AND vegetarian?` and `Are these dishes available for tonight's service?` as they are unsure which dishes are eligible, as the menu has no information recorded about the dishes' characteristics.
+2) Cooking staff is unsure, and asks the head chef. The head chef verbally responds with the eligible dishes.
+3) Cooking staff scribbles down the eligible dishes on a piece of paper
+4) Cooking staff then looks up each recipe, and on another piece of paper, transcribes the dish name and ingredients for each dish.
+5) Cooking staff goes into the storeroom, and starts to manually tick off all the ingredients for each dish or leaves them unticked is they are out of stock.
+6) Cooking staff now knows which dishes are `locally sourced AND vegetarian` and `available for tonight's service`, based on those items being in stock at the time of their stocktake.
+7) Cooking staff tells waiter which dishes `locally sourced AND vegetarian` and `available for tonight's service`.
+8) Waiter informs the customer which dishes `locally sourced AND vegetarian` and `available for tonight's service`.
 
-Cooking staff refer to the menu, and ask the head chef which ones are matching dishes.
-Then, they write down the list of recipe contents for each dish.
-Finally, they go into the storeroom, and start validating whether those recipe contents exist and roll the data back into an answer for front of house.
+#### Observations
 
-##### Problems
+There are some interesting observations here, some of which are easy to point out where things can be optimised, or where things can go wrong. Below are some of the easy ones to identify:
 
-The data is manually reconciled by humans, which means we are relying on them interpreting the menu correctly, not forgetting ingredents for the recipes and not miscalculating the ingredient stock levels. Accuracy of the answer is a concern, with little or no transparency into how the answer was gleaned.
-The cost in terms of labour and elapsed time, a single question is costly. The time it would take to eventually give the customer an answer would lead to dissatisfaction. Who wants to wait 15 minutes for an answer to a "simple question"? Secondary, undesirable behaviours begin to creep in, where people speculate the answer of dish availability. This leads to an exacerbation of the problem, where customers think their dish is coming but an assumption was made that it was in stock.
-Due to the elongated length of the query, we run the real risk that another business process is enacting the same task, rendering the timelineess of our answer outdated. Simply put, the age of our data becomes outdated to a point where the answer its cannot be trusted.
+- Steps 1 and 2 could be optimised, by having a coded menu indicating a dishes characteristics. For example, `vegetarian`, `vegan`.
+- Step 2 is misusing a highly paid member of the business operation to answer a trivial question. Furthermore, when similar requests come in, this staff member won't be able to scale and answer all these questions and perform other duties. They are the `constraint` of the process.
+- Steps 3 to 5 are all manual, and are reliant on the cooking staff not being interrupted, correctly transcribing details or interpreting them correctly. At scale, there is would a large variation on the quality of this work and we would repeatedly count the same ingredients over the course of a day.
+- In Step 6, our ingredient stock level is the physical stock itself, with no higher level abstraction of this data. The cost to query for this data is expensive, particularly in relation to the business benefit. In other words, reconciliation of the data is potentially happening tens of times per service.
+- The elapsed time for the entire process would be lengthy, and certainly wouldn't fill the customer with confidence.
 
-##### Partial, Manual SoT method
+### Partial, Manual SoT Method
 
-All stock items are counted at the commencement of each day. There is a recipe table which lists out the ingredients against each dish and is updated by the head chef. Each dish is classified with its characteristics:
-- Vegetarian
-- Chicken
-- Beef
-- Vegan
-- Gluten Free
-- Locally Sourced
-- Seasonal
+In this second example, some improvements have been made. Below is a list of improvements, to improve upon the first example:
 
-Prior to the first service, back end staff know how many meals of each type they can make and manually compile of list of dishes and their counts.
+The head chef maintains a dish table (or database), which details the following characteristics about each dish on the menu like the example below:
 
-When the same query comes in, we have optimised some of the business process. We have rolled up some of the lower level details into "business answers". We can tell which dishes are vegetarian AND seasonal AND locally sourced by the categorisation improvement. We also have greater surety of the integrity of our answer by having a centralised location where dish levels are tracked for the service.
+| Dish Name| Vegetarian| Vegan|  Meat Type| Locally Sourced| Ingredients and Quantities|
+| ---------|-----------|------| ---------|----------------|----------|
+| Zucchini Fritters|True|False|None|True|400g zucchini, 100g buckwheat flour, 30g olive oil|
 
-Solved the problem right?
+All stock items are counted at the commencement of each day. This stock count is kept with the cooking staff, who subtract items off as they are prepared from a central location within the cooking station.
+
+With these two optimisations, we are not longer querying the constraint for the recipe characteristics, nor are we wasting time during service to know whether we can serve a meal (or not).
+
+Let's walkthrough the interactions and high-level steps at play:
+
+1) Waiter is able to decode the menu and see which dishes are `vegetarian`, but the `locally sourced` information is not kept on the menu due to the dynamic nature of suppliers.
+2) Cooking staff lookup dish table, provided by the head chef and can determine which dishes are `vegetarian` and `locally sourced`.
+3) Cooking staff then lookup the stock levels, which are being updated as dishes go out. From this, they can determine whether all the ingredients are in stock or not.
+4) Cooking staff tells waiter which dishes `locally sourced AND vegetarian` and `available for tonight's service`.
+5) Waiter informs the customer which dishes `locally sourced AND vegetarian` and `available for tonight's service`.
+
+#### Observations
+
+Below are some of the observations, we will start out with the obvious ones:
+
+- They have now optimised some of our data about the dishes we offer and removed the constraint from the process.
+- The have also done some work to remove the repeat counting of the same item(s) and return more time for cooking staff to focus on cooking.
+- In other words, they have rolled up some of the lower level details into "business answers"
+- Whilst the customer's question isn't answered immediately, the waiter can return a response in a shorter elapsed time. This is an improvement.
+
+So it's seems they've solved the problem and have a workable solution right?
+
+### It's complicated
 
 Well, whilst we have a handle on "outgoings", another member of the team is accepting deliveries during the day and simply refilling the stock levels. They have another record of what deliveries they have received for that day. 
 
-We have now reached our next problem. Back end staff are using the start of day stock levels to inform front end staff of dish availability. But front end staff and restaurant management can see that the answers they are being given, don't match with reality. They can see that there is ingredient stock for all recipe items for one dish, yet they are being told its unavailable. As reconciliation of stock data only happens daily, the accuracy of the answers are no longer timely as a result, they cannot be trusted.
+We have now reached our next problem.
 
-The restaurant has a foundational problem, do we protect the integrity of the current system by "honouring" the start of day dish level answer, or do we regress back to the SoT being what we see with our eyes?
+Cooking staff are using the start of day stock levels to inform front of house staff staff of dish availability. But front of house staff and restaurant management can see that the answers they are being given  don't match with reality. They can see that there is ingredient stock for all recipe items for one dish, yet they are being told its unavailable. As reconciliation of stock data only happens daily, the accuracy of the answers are no longer timely as a result, they cannot be trusted.
+
+The restaurant has a foundational problem, do we protect the integrity of the system in the second example by "honouring" the start of day dish level answer, or do we regress back to the SoT being what we see with our eyes which we did in the first example?
 If we stick with the start of day dish level answer, we lose out on customer sales. If we don't, we inject more "cost" into the accuracy of our answers or worse sell items that we can't meet.
 
-At no point in this scenario has anyone explicitly asked for a Source of Truth. Yet, every single persona in the supply chain and customer experience is only as effective as having timely, accurate and high integrity data, a Source of Truth. And really, who "owns" this problem? Is it the chefs, the waiters, the delivery team, procurement, management?
+At no point in this scenario has anyone explicitly asked for a Source of Truth. Yet, every single persona in the supply chain and customer experience is only as effective as having timely, accurate and high integrity data, a Source of Truth. 
+
+And really, who "owns" this problem? Is it the cooking staff, front of house, the delivery team, procurement, management?
 
 This is why Source of Truth is such a hard problem to solve. No team or business unit has a natural ownership or accountability. Due to the way companies can be structured, it can be challenging sourcing the financial and business sponsorship to adopt such a system. In the example above, with a restaurant of no more than twenty employees, silos had already formed. The delivery team had their own Source of Truth and the cooking team had their own as well. Can you imagine the scale of these challenges on an enterprise level? How would this restaurant manage this problem efficiently if they opened a second, third and fourth restaurant?
 
 ## Conclusion
 
-This concludes this post in which we touched on some of the business problems which are caused by not having a Source of Truth or disparate Sources of Truth.
+This concludes this post in which we touched on some of the business problems which are caused by not having a Source of Truth or a disparate Sources of Truth.
 
 In the next post, we will move onto explaining the correlation between your business' fortunes and the adoption of their Source of Truth.
 
-# ZZ old data
-
-For example, if we were cloud consultants for a cloud consultancy, we would be considered "core business" to that particular business. In another example, if we were cloud consultants for a beveridge company, we wouldn't be considered "core business".
-
-Most of IT falls into the second example, where we are not considered "core business". This can be labelled other names like support services or shared services. Take a moment to reflect upon your situation and determine whether your role is core business or not.
-
-Unfortunately for those who are not considered "core business", we can have trouble correlating the tasks of the day or week back to the solving our customers problems.
-
-It's important that I introduce these concepts early on, as everything mentioned in this series is meant to assist in solving customer problems or providing a differentiated services against it's competitors. In some scenarios, we are core business, sometimes not, but always we are aiming to work to solve the customers' problems.
-
-## How do we solve customer problems?
-
-In order to solve a customer's problems and be successful, we need a few key competencies:
-
-1) The ability to thoroughly understand and comprehend the customers' definition of their problem
-2) The ability to translate that problem into the right "technical solution". NOTE: The use of "technical solution" is used to represent the technical component of that industry, such as the trade/skill that it offers. For example, it might be landscaping, building databases etc.
-3) The ability to use business data to make informed decisions about business operations and strategies which deliver those technical solutions.
-4) The ability to execute the solution in an accurate and timely manner.
-
-##
-
-## Basic Customer Problem/Business Solution Workflow
-
-To represent what a typical customer/business interaction is like, I've listed out some high-level steps below:
-
-1) Customer and business discuss customer problem
-2) Business takes customer problem, and translates that into one or more business problems
-3) Business perform some analysis or queries on what is needed
-4) Present customer with solutions
-
-So in summary, we listen to a customer problem, translate that into business speak, 
+Thank you for reading.
