@@ -1,6 +1,6 @@
 +++
 title = "Source of Truth Series - Business Alignment"
-date = 2021-11-26T21:40:11+11:00
+date = 2021-11-29T18:06:31+11:00
 tags = ["sot"]
 categories = ["source-of-truth"]
 draft = false
@@ -8,7 +8,8 @@ draft = false
 
 # Introduction
 
-In this post, I am going to explain <TODO>
+In the [next post about Source of Truth (SoT)](https://blog.danielteycheney.com/tags/sot/), I am going to explain how adopting a SoT needs business alignment, and also some of the challenges
+which you may face on your journey.
 
 # Source of Truth - What's the business alignment?
 
@@ -16,6 +17,7 @@ In the previous post, we used an example scenario answering a single customer qu
 the foundational problems which need to be addressed. The reality is that customer questions become more nuanced and contextual as businesses are expected to deliver a more tailored and personalised services in the modern world.
 
 It's not reasonable to expect us to predict all the variation of customer questions, but we can expect that most of their questions will relate to the service(s) that your business offers. It's imperative that your business knows its business well, and can answer and adapt to customers needs to stay successful.
+
 As touched on in the previous post, the solution to customer questions are the aggregation of multiple business questions and those business questions spawn multiple Source of Truth queries. 
 
 If our foundational answers are correct, these bubble up into higher abstractions and provide better experiences and competitive advantages.
@@ -28,11 +30,13 @@ Executive/director level managers are never going to ask you for a Source of Tru
 
 Why? Because they don't operate at a myopic level, that's your job. 
 
-Back to the previous post, the customer didn't ask how many locally sourced zucchinis do they have left. This isn't their concern, and they have paid to have this concern abstracted away from them, by paying for a service/staff to manage this for them.
+Back to the previous post, the customer didn't ask the waiter how many locally sourced zucchinis do they have left. This isn't their concern, and they have paid to have this concern abstracted away from them, by paying for a service/staff to manage this for them.
 
 Naturally, both the restaurant customer or your director level managers don't directly interact with your Source of Truth. They are beneficiaries of the Source of Truth systems which are in place.
 
-This causes the first problem which will need to be addressed in a Source of Truth journey. If they're not directly impacted by the problem, why bother addressing it or fixing it? They are paying you or your department to manage this problem on their behalf, isn't that enough?
+This causes the first problem which will need to be addressed in a Source of Truth journey.
+
+If they're not directly impacted by the problem, why bother addressing it or fixing it? They are paying you or your department to manage this problem on their behalf, isn't that enough?
 
 What should be evident by now is that we all benefit or suffer from the state of health of the Source of Truth. Whether we are asking Source of Truth queries to perform myopic tasks, or are asking highly abstracted questions from a strategic point of view, we all rely directly or indirectly on that data being timely and accurate. Without it, wide-scale distrust and disfunction in business operations will ensue.
 
@@ -42,7 +46,9 @@ To solidify this point, upper level managers will ask questions along some of th
 - We are reviewing our relationship with vendor x, how much is our business worth to them?
 - What's our current software vulnerability exposure across the Americas region?
 
-From their point of view, they expect a timely and accurate answer to these questions, so that they can get on with the business of making the decisions. But if they are answers are flawed, the blowback of a decision at that scale can be significant. Imagine the consequences of falsely reporting that systems were patched to even higher levels of management, only for a breach to occur using a known vulnerability? What reputational impact does that have to all levels which have been in supplying the answer?
+From their point of view, they expect a timely and accurate answer to these questions, so that they can get on with the business of making the decisions. But if they are answers are flawed, the blowback of a decision at that scale can be significant.
+
+Imagine the consequences of falsely reporting that systems were patched to even higher levels of management, only for a breach to occur using a known vulnerability? What reputational impact does that have to all levels which have been in supplying the answer?
 
 Some time should be spent with the relevant stakeholders and articulating the problem in their language and in their context. It's important to get buy-in that many teams would benefit from a Source of Truth, directly or indirectly.
 
@@ -50,13 +56,13 @@ Some time should be spent with the relevant stakeholders and articulating the pr
 
 Another line of questioning might be, if it's such a problem, affecting multiple teams, how are we getting by without a Source of Truth?
 
-Firstly, you might work somewhere where this is largely a solved problem, and that mature data governance and business processes are in place. Good job to you and your team, and the rest might not apply to you.
+Firstly, you might work somewhere where this is largely a solved problem, and that mature data governance and business processes are in place. Well done to you and your team, and the rest might not apply to you.
 
-The majority of other places probably exist in a state where the business mitigates this problem by one or more scenarios below:
+Other places probably exist in a state where the business mitigates this problem by one or more scenarios below:
 
 - Profitability is so large, that the problem hasn't manifested into a significant business challenge.
 - Culturally, being accurate is less valued than being fast. Think modern journalism!
-- Current systems, just work. The key term being just work!
+- Current systems, just work. The key term being __just work__!
 - Scalability is not a concern, so the investment doesn't justify a big enough return. We're not planning to grow, maintain the status quo.
 - Bureaucracy and internal politics are incentivised over meritocracy. Teams hoard access to information or silos are protected for individual agendas.
 
@@ -78,4 +84,8 @@ Whilst some of these might have some technical challenges, often the cultural an
 
 ## Conclusion
 
-This concludes this post into exploring the correlation between the Source of Truth, business alignment and some of the barriers to it's adoption. Thank you for reading.
+Whilst the challenges are numerous and complex, hopefully this content and [other posts in this series](https://blog.danielteycheney.com/tags/sot/) provide a starting point for discussion within your organisation.
+
+This concludes this post into exploring the correlation between the Source of Truth, business alignment and some of the barriers to it's adoption.
+
+Thank you for reading.

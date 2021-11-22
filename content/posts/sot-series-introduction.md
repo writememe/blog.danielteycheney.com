@@ -8,14 +8,14 @@ draft = true
 
 # Introduction
 
-This post will be the first in a series of posts about Source of Truth (SoT) and my thoughts and observations on the subject. It's a topic which is often
+This post will be the first in a [series of posts about Source of Truth (SoT)](https://blog.danielteycheney.com/tags/sot/) and my thoughts and observations on the subject. It's a topic which is often
 discussed and debated at the tooling level, however I aim to take a holistic approach to addressing some of the other considerations which I can't find any strong existing material for.
 
 ## Background
 
 In order to build and provide platforms for other people to consume, data governance, integrity and accuracy becomes a primary concern for automation professionals. This is where the subject of SoT is regularly discussed.
 
-Often, this problem manifests into an automators world as they are attempting to objectify, document and automate business processes. Existing, ad-hoc data management problems managed by humans do not scale with automation, so it often feels like a problem they are looking to get resolved.
+Often, this problem manifests into an automators' world as they are attempting to objectify, document and automate business processes. Existing, ad-hoc data management problems managed by humans do not scale with automation, so it often feels like a problem they are looking to get resolved.
 
 At the time of writing, there are some considerations and subjects I'd like to address:
 
