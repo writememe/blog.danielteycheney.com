@@ -1,6 +1,6 @@
 +++
 title = "Source of Truth Series - Business Value"
-date = 2021-11-22T18:07:31+11:00
+date = 2021-11-24T18:07:31+11:00
 tags = ["sot"]
 categories = ["source-of-truth"]
 draft = false
