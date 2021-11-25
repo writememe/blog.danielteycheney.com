@@ -171,7 +171,7 @@ Let's walkthrough the interactions and high-level steps at play:
 Below are some of the observations, we will start out with the obvious ones:
 
 - They have now optimised some of our data about the dishes we offer and removed the constraint from the process.
-- The have also done some work to remove the repeat counting of the same item(s) and return more time for cooking staff to focus on cooking.
+- They have also done some work to remove the repeat counting of the same item(s) and return more time for cooking staff to focus on cooking.
 - In other words, they have rolled up some of the lower level details into "business answers".
 - Whilst the customer's question isn't answered immediately, the waiter can return a response in a shorter elapsed time, which marks an improvement.
 
@@ -183,7 +183,7 @@ Well, whilst we have a handle on "outgoings", another member of the team is acce
 
 We have now reached our next problem.
 
-Cooking staff are using the start of day stock levels to inform front of house staff staff of dish availability.
+Cooking staff are using the start of day stock levels to inform front of house staff of dish availability.
 But the front of house staff and restaurant management can see that the answers they are being given don't match with reality (the stockroom). They can see that there is ingredient stock for all recipe items for one dish, yet they are being told its unavailable. As reconciliation of stock data only happens daily, the accuracy of the answers are no longer timely as a result, they cannot be trusted.
 
 The restaurant has a foundational problem. 
