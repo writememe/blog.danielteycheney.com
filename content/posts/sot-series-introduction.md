@@ -3,7 +3,7 @@ title = "Source of Truth Series - Introduction"
 date = 2021-11-24T18:06:31+11:00
 tags = ["sot"]
 categories = ["source-of-truth"]
-draft = true
+draft = false
 +++
 
 # Introduction
