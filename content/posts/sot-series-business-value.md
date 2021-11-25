@@ -207,7 +207,7 @@ How would this restaurant manage this problem efficiently if they opened a secon
 
 ## Conclusion
 
-This concludes this post in which we touched on some of the business problems which are caused by not having a Source of Truth or a disparate Sources of Truth.
+This concludes this post in which we touched on some of the business problems which are caused by not having a Source of Truth or disparate Sources of Truth.
 
 In the next post, we will move onto explaining the correlation between your business' fortunes and the adoption of their Source of Truth.
 
