@@ -1,0 +1,10 @@
+matrix:
+- name: Python Source
+  aspell:
+    lang: en
+    d: en_US
+  sources:
+  - content/posts/*.md
+  dictionary:
+    wordlists:
+    - wordlist.txt
