@@ -66,3 +66,7 @@ To deploy the changes from the site to Cloudfront, a `Makefile` is used. Use the
 ```console
 make
 ```
+
+## TODO
+
+- [ ] Add automated spell checking to CI pipeline
