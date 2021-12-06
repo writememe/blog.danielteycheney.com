@@ -19,4 +19,4 @@ jobs:
                   submodules: recursive
             - uses: rojopolis/spellcheck-github-actions@0.18.0
               with:
-                  config_path: pyspelling.yml
+                  config_path: .pyspelling.yml
