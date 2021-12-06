@@ -43,7 +43,7 @@ The guest speakers on offer are a real highlight of the course. All the speakers
 - Candid and charismatic delivery
 - Genuine passion and commitment to progressing the movement
 
-All the presentations were thought provoking and stimulating which showed that these presenters are operating on another level, certaintly well above myself.
+All the presentations were thought provoking and stimulating which showed that these presenters are operating on another level, certainly well above myself.
 
 Unfortunately due to the timezone I'm in, I was unable to attend the sessions live but the recordings meant I was able to consume these later on.
 You can always ask questions to the presenters after in the private Slack channels for the course as well.

@@ -12,7 +12,7 @@ This is the first time in the history of this blog that I've probably gone _off 
 
 However, I think it's important to be truthful to your own values, even if negativity may come your way. It's been written through the lens of my life experience, what I've observed to be successful and is meant to trigger thought and discussion.
 
-As I've stated [previously](https://blog.danielteycheney.com/posts/philosophies/), I've always been committed to lifelong learning whether it be new technlogies, philosophies or points of view. Hopefully this introduction allows you to consume the information from the right standpoint.
+As I've stated [previously](https://blog.danielteycheney.com/posts/philosophies/), I've always been committed to lifelong learning whether it be new technologies, philosophies or points of view. Hopefully this introduction allows you to consume the information from the right standpoint.
 
 Finally, as always, everything written here are my own thoughts, and not those of my employer.
 

@@ -1,3 +1,4 @@
 public/
 *.code-workspace
 venv/
+*.dic

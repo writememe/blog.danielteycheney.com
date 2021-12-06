@@ -1,1 +1,3 @@
 awscli
+pyspelling
+aspell
