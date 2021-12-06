@@ -15,8 +15,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-                with:
-                    submodules: recursive
+              with:
+                  submodules: recursive
             - uses: rojopolis/spellcheck-github-actions@0.18.0
-                with:
-                config_path: pyspelling.yml
+              with:
+                  config_path: pyspelling.yml
