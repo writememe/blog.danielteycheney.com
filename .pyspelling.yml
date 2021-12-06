@@ -9,6 +9,6 @@ matrix:
       ignore-case: true
     sources:
       - content/posts/*.md
-      dictionary:
-          wordlists:
-            - spelllist.txt
+    dictionary:
+      wordlists:
+        - spelllist.txt
