@@ -39,7 +39,7 @@ Azure have a similar web-based offering as well, although [slightly different](h
 
 ### What is possible from the Cloud Shell?
 
-Suprisingly, quite a lot. From within the Cloud Shell, you can perform some common development and automation tasks such as:
+Surprisingly, quite a lot. From within the Cloud Shell, you can perform some common development and automation tasks such as:
 
 - Clone a repository using git, make changes and push changes back to the master branch
 - Make directories/files to organise work from within your cloud shell

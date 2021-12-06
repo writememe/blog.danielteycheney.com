@@ -2,9 +2,9 @@ matrix:
 - name: Python Source
   aspell:
     lang: en
-    d: en_US
+    d: en
   sources:
   - content/posts/*.md
   dictionary:
     wordlists:
-    - wordlist.txt
+    - spelllist.txt
