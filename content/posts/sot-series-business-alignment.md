@@ -46,7 +46,7 @@ To solidify this point, upper level managers will ask questions along some of th
 - We are reviewing our relationship with vendor x, how much is our business worth to them?
 - What's our current software vulnerability exposure across the Americas region?
 
-From their point of view, they expect a timely and accurate answer to these questions, so that they can get on with the business of making the decisions. But if they are answers are flawed, the blowback of a decision at that scale can be significant.
+From their point of view, they expect a timely and accurate answer to these questions, so that they can get on with the business of making the decisions. But if these answers are flawed, the blowback of a decision at that scale can be significant.
 
 Imagine the consequences of falsely reporting that systems were patched to even higher levels of management, only for a breach to occur using a known vulnerability? What reputational impact does that have to all levels which have been in supplying the answer?
 
