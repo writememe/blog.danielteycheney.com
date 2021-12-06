@@ -1,4 +1,4 @@
 public/
 *.code-workspace
 venv/
-dictionary.dic
+*.dic

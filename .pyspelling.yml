@@ -2,7 +2,8 @@ matrix:
 - name: Python Source
   aspell:
     lang: en
-    d: en
+    d: en_AU
+    ignore-case: true
   sources:
   - content/posts/*.md
   dictionary:
