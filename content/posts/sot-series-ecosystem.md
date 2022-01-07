@@ -16,7 +16,7 @@ In the [next post about Source of Truth (SoT)](https://blog.danielteycheney.com/
 The SoT ecosystem is comprised of systems, data models, data and roles. These are listed out below:
 
 - **SoT System** - The system which will house the SoT data.
-- **SoT Data Models** - The abstract model that organizes elements of SoT data and standardizes how they relate to one another and to the properties of real-world entities.
+- **SoT Data Models** - The abstract model that organises elements of SoT data and standardises how they relate to one another and to the properties of real-world entities.
 - **SoT Data** - The actual data of interest, stored as defined by the data model.
 - **Consumer Role** - A consumer of the SoT, namely its data.
 - **SoT System Owner Role** - The designated owner of the SoT, responsible for the design and implementation of the SoT system.
@@ -56,7 +56,7 @@ The ultimate goal is to end up leveraging a high maturity SoT system, which shou
 
 - Feature-parity API interface
 - Role-based access control
-- Relational backend database, to model your complex, relational environment
+- Relational back end database, to model your complex, relational environment
 - Pre-defined core data models, to save you having to invest in that undifferentiated work
 - Ability to extend data models, to accommodate your business needs
 
