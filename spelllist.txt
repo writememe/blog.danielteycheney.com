@@ -19,6 +19,7 @@ cd
 chmod
 ci
 cisco
+CSV
 config
 configs
 danielfjteycheney
@@ -78,6 +79,7 @@ microsoft
 Mihai
 minimalistic
 mkdir
+nautobot
 neighbors
 netbox
 netdevops
@@ -146,6 +148,11 @@ uptime
 USD
 venv
 virl
+VLAN
+VLANs
+vlan
+vlans
+VXLAN
 vm
 walkthrough
 WidgetX
