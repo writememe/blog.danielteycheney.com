@@ -294,7 +294,7 @@ TOTAL COUNT : 120
 ```
 
 This allows us to determine the high level information, without having to interpret the entire log file. If we are interested
-in the the failures, we can simply use a `grep` to find the failures using a command similar to below:
+in the failures, we can simply use a `grep` to find the failures using a command similar to below:
 
 ```
 (venv) ➜  day-one-net-toolkit git:(master) ✗ grep "FAILURE : " logs/DISCOVERY-LOG-2019-08-03-12-16-12.txt
