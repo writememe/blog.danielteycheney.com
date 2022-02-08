@@ -4,7 +4,7 @@ acloud
 AggregatedResult
 Ansible
 APIs
-Arista
+(?i)Arista
 arp
 AttributeError
 au
@@ -20,7 +20,7 @@ Catalin
 cd
 chmod
 ci
-cisco
+(?i)cisco
 CSV
 config
 configs
@@ -36,22 +36,21 @@ drwxr
 DSL
 DSLs
 empathise
-EOS
-eos
+(?i)EOS
 fc
 FQDN
 FTX
 GCE
 gcloud
 (?i)GCP
-getter
+(?i)getter
 getters
 (?i)github
 gns
 googleapis
 gsutil
 hoc
-hostname
+(?i)hostname
 html
 https
 img
@@ -68,7 +67,7 @@ jenkins
 jetbrains
 Jinja
 JSON
-junos
+(?i)junos
 labid
 (?i)linkedin
 LLDP
@@ -76,7 +75,7 @@ LLDP
 Makefiles
 mb
 md
-microsoft
+(?i)microsoft
 Mihai
 minimalistic
 mkdir
@@ -97,7 +96,7 @@ NTP
 NUC
 nxos
 ok
-openpyxl
+(?i)openpyxl
 OSPF
 ospf
 packetflow
@@ -160,5 +159,5 @@ writememe
 www
 xr
 XXXXXX
-YAML
+(?i)YAML
 yml
