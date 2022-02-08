@@ -19,7 +19,7 @@ jobs:
       uses: errata-ai/vale-action@v1.4.3
       with:
         # Optional
-        config: .vale.ini
+        # config: .vale.ini
 
         # Optional
         files: content/
