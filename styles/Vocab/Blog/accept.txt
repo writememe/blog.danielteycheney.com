@@ -97,8 +97,7 @@ NUC
 nxos
 ok
 (?i)openpyxl
-OSPF
-ospf
+(?i)OSPF
 packetflow
 packtpub
 param
@@ -107,7 +106,7 @@ pathlib
 Philosphies
 PHONY
 png
-Pre
+(?i)Pre
 py
 Pycharm
 Pylama
@@ -121,8 +120,7 @@ reputational
 Scalability
 scalable
 scruitiny
-SDK
-sdk
+(?i)SDK
 servicecontrol
 signup
 snmp
