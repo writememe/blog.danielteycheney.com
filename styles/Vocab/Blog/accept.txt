@@ -61,7 +61,7 @@ incentivised
 io
 ios
 iosv
-ip
+(?i)ip
 IPSpace
 ipv
 IPv
@@ -71,7 +71,7 @@ Jinja
 JSON
 junos
 labid
-linkedin
+(?i)linkedin
 LLDP
 makefile
 Makefiles
@@ -85,7 +85,7 @@ nautobot
 neighbors
 netbox
 netdevops
-netmiko
+(?i)netmiko
 networktocode
 NG
 nornir
