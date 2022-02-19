@@ -263,7 +263,7 @@ Below is a link to the above Makefile, along with a couple of other great resour
 
 [My Lab solution with Makefile (Github)](https://github.com/writememe/gcp-cloud-labs/blob/master/01-basic-compute-lab/EXERCISE.md)
 
-[Mindlessness - Makefile tutorial with walkthrough](https://blog.mindlessness.life/2019/11/17/the-language-agnostic-all-purpose-incredible-makefile.html)
+[Mindlessness - Makefile tutorial with walk-through](https://blog.mindlessness.life/2019/11/17/the-language-agnostic-all-purpose-incredible-makefile.html)
 
 [Packet Flow - Makefile tutorial for Network Automation](https://www.packetflow.co.uk/netdevops-ci-cd-with-ansible-github-jenkins-and-cisco-virl-part-2-the-components-tools/#make)
 

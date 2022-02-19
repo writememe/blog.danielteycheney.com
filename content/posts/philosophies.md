@@ -6,7 +6,7 @@ categories = ["non-technical"]
 draft = false
 +++
 
-# Philosphies
+# Philosophies
 
 Before you read this blog, it's probably important to share some of my philosophies. These are the general guidelines or principles which bias my thinking, my approach to work and how I interact with others:
 

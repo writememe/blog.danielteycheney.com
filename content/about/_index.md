@@ -31,7 +31,7 @@ Below are some of weird/interesting experiences I've had in my career:
   
 - Deployed a network on a oil rig off the coast of Ghana  
 - Completed offshore survival training (Think what to do if a helicopter crashes at sea...)  
-- Had a cablers license and used to provision analog phone services (Yes, fax lines!)  
+- Had a cabling license and used to provision analog phone services (Yes, fax lines!)  
 - Used to do a lot of VoIP work  
 - Have worked on Frame Relay circuits  
 - Replaced and installed UPSs in a variety of "network racks"  
