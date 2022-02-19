@@ -19,7 +19,7 @@ nautobot
 (?i)netmiko
 (?i)Nornir
 parallelization
-pre
+(?i)pre
 py
 (?i)Pylama
 Pycharm
