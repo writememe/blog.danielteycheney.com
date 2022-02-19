@@ -17,7 +17,7 @@ At a fundamental level, all businesses exist by providing solutions to customer 
 - *Core Business* - Where our team or department is main is the main source of a companies profits or success. For example, a landscaper at a landscaping services company
 - *Non Core Business* - Where our team or department provides a supporting role to the core business operation. It's sometimes is named "support services" or "shared services". For example, a cloud engineer at an agricultural company.
 
-The vast majority of IT roles are non core business, so it can be difficult to demonstrate the business value of activities we undertake. Therefore, often we can be on the backfoot and perceived as an "overhead" or an "expense" and justifying large, multi department undertakings is met with resistance.
+The vast majority of IT roles are non core business, so it can be difficult to demonstrate the business value of activities we undertake. Therefore, often we can be on the back foot and perceived as an "overhead" or an "expense" and justifying large, multi department undertakings is met with resistance.
 
 When considering the role of a SoT within your environment, it's important to show the correlation between this non-core business activity and the direct success of the core business. 
 
@@ -123,7 +123,7 @@ of retrieving the SoT data, so that we can answer the customers original intenti
 
 ### Non-SoT Method
 
-In this first example, there is no SoT in place at all. Let's walkthrough the interactions and high-level steps at play:
+In this first example, there is no SoT in place at all. Let's walk through the interactions and high-level steps at play:
 
 1) Waiter asks cooking staff member the two business questions **What dishes we offer that are locally sourced AND vegetarian?** and **Are these dishes available for tonight's service?** as they are unsure which dishes are eligible, as the menu has no information recorded about the dishes' characteristics.
 2) Cooking staff is unsure, and asks the head chef. The head chef verbally responds with the eligible dishes.
@@ -158,7 +158,7 @@ In this second example, some improvements have been made. Below is a list of imp
 
 With these two optimisations, we are no longer querying the constraint for the recipe characteristics, nor are we wasting time during service to know whether we can serve a meal (or not).
 
-Let's walkthrough the interactions and high-level steps at play:
+Let's walk through the interactions and high-level steps at play:
 
 1) Waiter is able to query the menu and see which dishes are **vegetarian**, but the **locally sourced** information is not kept on the menu due to the dynamic nature of suppliers.
 2) Cooking staff lookup dish table, provided by the head chef and can determine which dishes are **vegetarian** and **locally sourced**.

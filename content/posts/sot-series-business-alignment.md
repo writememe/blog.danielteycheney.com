@@ -38,7 +38,7 @@ This causes the first problem which will need to be addressed in a Source of Tru
 
 If they're not directly impacted by the problem, why bother addressing it or fixing it? They are paying you or your department to manage this problem on their behalf, isn't that enough?
 
-What should be evident by now is that we all benefit or suffer from the state of health of the Source of Truth. Whether we are asking Source of Truth queries to perform myopic tasks, or are asking highly abstracted questions from a strategic point of view, we all rely directly or indirectly on that data being timely and accurate. Without it, wide-scale distrust and disfunction in business operations will ensue.
+What should be evident by now is that we all benefit or suffer from the state of health of the Source of Truth. Whether we are asking Source of Truth queries to perform myopic tasks, or are asking highly abstracted questions from a strategic point of view, we all rely directly or indirectly on that data being timely and accurate. Without it, wide-scale distrust and dysfunction in business operations will ensue.
 
 To solidify this point, upper level managers will ask questions along some of the examples below:
 

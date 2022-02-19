@@ -22,7 +22,7 @@ In modern Western culture, we are exposed from a young age to the notion of "hap
 
 Whether intentional or not, it conditions us to believing if we "just do x or to solve problem y", everything will be fine and our problems will be solved. However, any of us who have been on Earth for quite some time will realise that even if we solve problem y, another new problem will appear.
 
-To emphasise this, there is a common conception that if you earn extra money, then all your problems will be solved. If that were truly the case, why do the richest people in the world still have problems to deal with? Some common examples of their problem may be people asking for money, increased public scruitiny or not enough leisure time. Frequently, the worlds richest people lament lack of time spent with loved ones or fractured relationships with their kinship.
+To emphasise this, there is a common conception that if you earn extra money, then all your problems will be solved. If that were truly the case, why do the richest people in the world still have problems to deal with? Some common examples of their problem may be people asking for money, increased public scrutiny or not enough leisure time. Frequently, the worlds richest people lament lack of time spent with loved ones or fractured relationships with their kinship.
 
 _*No-one has no problems, just different ones.*_
 
