@@ -33,9 +33,9 @@ jobs:
             - name: Copy blog files to s3 bucket
               run: |
                   aws s3 sync --acl "public-read" public/ ${{ secrets.AWS_S3_BUCKET }}
-            - name: Update Google sitemap
-              run: |
-                  curl --silent ${{ secrets.SITEMAP_URL }}
             - name: Invalidate Cloudfront cache
               run: |
                   aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_ID }} --paths "/*"
+            - name: Update Google sitemap
+              run: |
+                  curl --silent ${{ secrets.SITEMAP_URL }}
