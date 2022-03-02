@@ -13,7 +13,7 @@ jobs:
               uses: actions/checkout@master
 
             - name: Vale - Editorial Review
-              uses: errata-ai/vale-action@v1.4.3
+              uses: errata-ai/vale-action@v1.5.0
               with:
                   # Use both the write-good and Microsoft for editorial style review.
                   styles: |
