@@ -15,11 +15,12 @@ jobs:
             - name: Vale - Editorial Review
               uses: errata-ai/vale-action@v1.4.3
               with:
-                  files: content/
                   # Use both the write-good and Microsoft for editorial style review.
                   styles: |
-                    https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
-                    https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
+                      https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
+                      https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
+                  files:
+                      content/
               env:
                   # Required, set by GitHub actions automatically:
                   # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
