@@ -36,6 +36,6 @@ jobs:
             - name: Update Google sitemap
               run: |
                   curl --silent ${{ secrets.SITEMAP_URL }}
-            - name: Invalidate Cloudfront cache
+            - name: Invalidate CloudFront cache
               run: |
                   aws cloudfront create-invalidation --distribution-id ${{ secrets.AWS_CLOUDFRONT_ID }} --paths "/*"
