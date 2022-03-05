@@ -55,7 +55,7 @@ Nornir with NAPALM is used to retrieve network configuration and state. By elect
 - Structured data retrieval, particularly device state
 - Large user base and active community development with project
 
-A toolkit is provided, with two Python scripts which both utilise the same inventory. 
+A toolkit's provided, with two Python scripts which both utilise the same inventory. 
 The idea over time would be to add Python scripts if additional functionality is needed from the toolkit. 
 
 
@@ -78,10 +78,10 @@ To give additional context on the proceeding examples, below is the sample netwo
 
 ### Hosts - hosts.yaml
 
-Each host from the inventory is entered into the hosts file. You will note that there is minimal data in here, however note the group for
+Each host from the inventory is entered into the hosts file. You won'te that there is minimal data in here, however note the group for
  each host is based on the hosts' operating system i.e ios, eos, nxos, junos.  
  
-Nornirs inheritance model is used to populate data at the group level.  An extension of this using the example inventory is below:
+Nornirs inheritance model is used to populate data at the group level. An extension of this using the example inventory is below:
 
 ```
 dfjt-r001.lab.dfjt.local
@@ -118,7 +118,7 @@ lab-junos-01.lab.dfjt.local
 ### Groups - groups.yaml
 
 Each group contains a one-to-one mapping with the platform/operating system. Also, the credentials are stored in this location. 
-One could move these credentials to the default.yaml file if they are all the same on each platform.  
+One could move these credentials to the default.yaml file if they're all the same on each platform.  
 
 ```
 ios:
@@ -144,12 +144,12 @@ junos:
 
 ### Default - default.yaml
 
-We have nothing in this file, however this is where you can set inventory-wide defaults, and use the groups.yaml and hosts.yaml to 
+We'ven'thing in this file, however this is where you can set inventory-wide defaults, and use the groups.yaml and hosts.yaml to 
 override those defaults.
 
 ## Discovery Toolkit
 
-Now that the data is populated, we can leverage this structure to execute both Python scripts. There are two Python scripts within the toolkit:  
+Now that the data is populated, we can leverage this structure to execute both Python scripts. Two Python scripts are contained within the toolkit:  
 
 | Python script| Description|
 | ------------ |-----------|
@@ -293,7 +293,7 @@ FAILURE COUNT : 10
 TOTAL COUNT : 120
 ```
 
-This allows us to determine the high level information, without having to interpret the entire log file. If we are interested
+This allows us to determine the high level information, without having to interpret the entire log file. If we're interested
 in the failures, we can simply use a `grep` to find the failures using a command similar to below:
 
 ```
@@ -313,8 +313,7 @@ FAILURE : lab-junos-01.lab.dfjt.local - users
 
 #### Use-case examples ####
 
-After running this script, we have now collated configuration and state off our inventory to use for analysis. There are
-numerous ways that we can consume this data. Below are a few examples:
+After running this script, we've now collated configuration and state off our inventory to use for analysis. We can consume this data in numerous ways. Below are a few examples:
 
 ##### Retrieval of uptime across all devices #####
 
@@ -361,7 +360,7 @@ It contains answers to questions such as:
 -**_What local usernames are configured on all devices? Are these consistent?_**  
 -**_What OS versions are we running for the same model?_**  
 -**_Has IPv6 been configured on any devices?_**  
--**_What other network devices might be physically connected to these devices which we were not previously aware of?_** 
+-**_What other network devices might be physically connected to these devices which we weren't previously aware of?_** 
   
 Being Excel, this data is easy to format, interpret and convey to other parts of the IT team such as procurement, change management or upper management.
 
@@ -388,11 +387,11 @@ End Processing Host - Facts: dfjt-r001.lab.dfjt.local
 
 ## Conclusion ##
 
-In conclusion, we have used Nornir to solve a common problem across all environments and have provided two ways
-of representing this data.  Both the toolkit and the inventory structure is homogeneous enough to cater for all environments and output folders and files are
+In conclusion, we've used Nornir to solve a common problem across all environments and have provided two ways
+of representing this data. Both the toolkit and the inventory structure is homogeneous enough to cater for all environments and output folders and files are
 dynamically generated without intervention from the operator.
 
-We have also integrated a Python module not present in Nornir to provide additional functionality
+We've also integrated a Python module not present in Nornir to provide additional functionality
 without the need to write our own custom module, highlighting the power and potential of using this automation framework.
 
 The repository for this project can be found [here](https://github.com/writememe/day-one-net-toolkit) and I hope you found this useful!

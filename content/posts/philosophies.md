@@ -26,14 +26,14 @@ You make yourself an inherit dependency to the operation of that system, which m
 
 ## Don't pull the ladder up ##
 
-There is no way I would be where I am today unless others:  
+I wouldn't be where I am today unless others:  
  
 - Showed me how things work  
 - Gave me some career advice or mentoring  
 - Took a gamble on giving me an opportunity to prove myself  
 - Showed me how to navigate political situations  
 
-So whenever I can I try to help others, particularly if they are in new territory or are navigating a problem which I may be of help.
+Whenever I can I try to help others, particularly if they're in new territory or are navigating a problem which I may be of help.
 
 ## Proactive is best ##
 

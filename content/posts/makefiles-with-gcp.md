@@ -24,9 +24,9 @@ As part of completing the [Google Certified Associate Cloud Engineer](https://ac
 
 The lab is essentially implementing a solution from using knowledge gained from prior lessons to address the requirements of the lab. This solution can be implemented either via the GUI or via Cloud Shell. As a proponent of automation, I decided to avoid the ‘click-ops’ and attempt the Cloud Shell option.
 
-So, I decided to solve this lab using a Makefile and executing commands using Google Cloud Shell.
+Therefore, I decided to solve this lab using a Makefile and executing commands using Google Cloud Shell.
 
-### What is Cloud Shell?
+### What's Cloud Shell?
 
 [Google Cloud Shell](https://cloud.google.com/shell/) is a web-based command line access tool to access your GCP resources from any web browser. Some of the key features of this tool I found are:
 
@@ -37,7 +37,7 @@ So, I decided to solve this lab using a Makefile and executing commands using Go
 
 Azure have a similar web-based offering as well, although [slightly different](https://azure.microsoft.com/en-au/features/cloud-shell/).
 
-### What is possible from the Cloud Shell?
+### What's possible from the Cloud Shell?
 
 Surprisingly, quite a lot. From within the Cloud Shell, you can perform some common development and automation tasks such as:
 
@@ -50,7 +50,7 @@ Short of installing my own IDE, I haven’t found anything yet which has discour
 
 ### How do I find out what gcloud command to use?
 
-There are two main ways to find the commands:
+Typically, there are two main ways to find the commands:
 
 - Perform the action through the GUI and prior to creating or deleting, there is a link provided to the equivalent **REST** or **command line**. Clicking on the **command line** will give you all the gcloud commands required to create it via the command line. This [link](https://cloud.google.com/shell/docs/running-gcloud-commands) is a good resource.
 - Refer to the [gcloud Software Development Toolkit (SDK)](https://cloud.google.com/sdk/gcloud/reference/). Being Google, well the searches are alarmingly accurate and intuitive!
@@ -61,7 +61,7 @@ The lab presented two main problems which would be difficult to update or mainta
 
 
 #### Problem One
-There are variables repeated numerous times throughout the list of commands. Maintaining and updating multiple entries of this duplicate data should be handled in one location.  
+Variables repeated numerous times throughout the list of commands. Maintaining and updating multiple entries of this duplicate data should be handled in one location.  
 #### Solution
 _*Makefiles have a simple way of defining and using variables which are easy to be interpreted.*_
 #### Problem Two 
@@ -108,7 +108,7 @@ release:
 	    --metadata google-compute-default-region=$(DEFAULT_REGION),google-compute-default-zone=$(DEFAULT_ZONE)
 	# Check that default region and zone is configured
 	gcloud compute project-info describe
-	# List compute services and ensure that they are enabled
+	# List compute services and ensure that they're enabled
 	gcloud services list --enabled --filter=compute
 	# List current buckets
 	gsutil ls
@@ -116,7 +116,7 @@ release:
 	gsutil mb -l us $(BUCKET)
 	# List created storage bucket
 	gsutil ls $(BUCKET)
-	# chmod Upload worker script file so that it is executable
+	# chmod Upload worker script file so that it's executable
 	chmod +x worker-startup-script.sh
 	# Create instance, using the `worker-startup-script.sh` as a startup script.
 	gcloud compute --project=$(PROJECT_ID) \
@@ -186,7 +186,7 @@ enable-compute:
 	    --metadata google-compute-default-region=$(DEFAULT_REGION),google-compute-default-zone=$(DEFAULT_ZONE)
 	# Check that default region and zone is configured
 	gcloud compute project-info describe
-	# List compute services and ensure that they are enabled
+	# List compute services and ensure that they're enabled
 	gcloud services list --enabled --filter=compute
 	
 create-bucket:
@@ -198,7 +198,7 @@ create-bucket:
 	gsutil ls $(BUCKET)
 	
 prepare-script:
-	# chmod Upload worker script file so that it is executable
+	# chmod Upload worker script file so that it's executable
 	chmod +x worker-startup-script.sh
 	
 deploy-compute:
@@ -253,7 +253,7 @@ Furthermore, it’s easy for someone who has no knowledge about GCP to comprehen
 
 ## Conclusion
 
-Makefiles are an operating system independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they are invoked and executed from a single file.  
+Makefiles are an operating system independent, simple and effective way of automating deployments. They can also be used to "glue" together disparate automation solutions so that they're invoked and executed from a single file.  
 
 I can see great potential in using them for future projects and in fact used one to publish this blog post.
 

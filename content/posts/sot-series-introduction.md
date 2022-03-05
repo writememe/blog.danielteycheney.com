@@ -15,7 +15,7 @@ discussed and debated at the tooling level, however I aim to take a holistic app
 
 In order to build and provide platforms for other people to consume, data governance, integrity and accuracy becomes a primary concern for automation professionals. This is where the subject of SoT is regularly discussed.
 
-Often, this problem manifests into an automators' world as they are attempting to objectify, document and automate business processes. Existing, ad-hoc data management problems managed by humans do not scale with automation, so it often feels like a problem they are looking to get resolved.
+Often, this problem manifests into an automators' world as they're attempting to objectify, document and automate business processes. Existing, ad-hoc data management problems managed by humans don't scale with automation, so it often feels like a problem they're looking to get resolved.
 
 At the time of writing, there are some considerations and subjects I'd like to address:
 
@@ -28,9 +28,9 @@ At the time of writing, there are some considerations and subjects I'd like to a
 
 ## Writing Style
 
-In taking on this series, the amount of content which will be covered will be substantial. It's going to take some imaginative thinking on my behalf (and yours) to keep things as engaging as possible. It's anticipated that some examples and analogies will not even be about the IT world itself, so that I can portray the concepts to you in an abstract, yet relatable manner.
+In taking on this series, the amount of content which will be covered will be substantial. It's going to take some imaginative thinking on my behalf (and yours) to keep things as engaging as possible. It's anticipated that some examples and analogies won't even be about the IT world itself, so that I can portray the concepts to you in an abstract, yet relatable manner.
 
-After giving this some thought for some months, it's really hard to structure the series into a formulaic sequence. So please, hang in there as I bounce around ideas and topics, and hopefully it all comes together!
+After giving this some thought for some months, it's really hard to structure the series into a formulaic sequence. Please, hang in there as I bounce around ideas and topics, and hopefully it all comes together!
 
 It should also be noted that I have no intention to be prescriptive with this series, and is more intended to provoke thought and provide some insight into pitfalls and potentially a framework for addressing this problem.
 
