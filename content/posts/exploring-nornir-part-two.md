@@ -55,7 +55,7 @@ Nornir with NAPALM is used to retrieve network configuration and state. By elect
 - Structured data retrieval, particularly device state
 - Large user base and active community development with project
 
-A toolkit's provided, with two Python scripts which both utilise the same inventory. 
+A toolkit is provided, with two Python scripts which both utilise the same inventory. 
 The idea over time would be to add Python scripts if additional functionality is needed from the toolkit. 
 
 
@@ -78,7 +78,7 @@ To give additional context on the proceeding examples, below is the sample netwo
 
 ### Hosts - hosts.yaml
 
-Each host from the inventory is entered into the hosts file. You won'te that there is minimal data in here, however note the group for
+Each host from the inventory is entered into the hosts file. You will note that there is minimal data in here, however note the group for
  each host is based on the hosts' operating system i.e ios, eos, nxos, junos.  
  
 Nornirs inheritance model is used to populate data at the group level. An extension of this using the example inventory is below:
@@ -144,7 +144,7 @@ junos:
 
 ### Default - default.yaml
 
-We'ven'thing in this file, however this is where you can set inventory-wide defaults, and use the groups.yaml and hosts.yaml to 
+Nothing is contained in this file, however this is where you can set inventory-wide defaults, and use the groups.yaml and hosts.yaml to 
 override those defaults.
 
 ## Discovery Toolkit

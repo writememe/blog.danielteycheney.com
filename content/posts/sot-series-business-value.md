@@ -53,7 +53,7 @@ After we've documented and clarified the customers' question, we now need to tra
 
 Expanding on the example above, we may have two business questions:
 
-- _Do we've any used European electric cars in our possession?_
+- _Are there any used European electric cars in our possession?_
 - _If so, are they ready for sale?_
 
 
@@ -111,7 +111,7 @@ We can then use the data of dish name and ingredients to perform another query t
 
 > Are these dishes available for tonight's service?
 
-Now we've a mapping or a process to determine the answer or solution to the original customer problem, as shown below:
+Now we've got mapping or a process to determine the answer or solution to the original customer problem, as shown below:
 
 ![Final Query](/images/img/SoT-Concepts-Final-Query.png)
 
@@ -179,7 +179,7 @@ It seems they've solved the problem and have a workable solution right?
 
 ### It's complicated
 
-Well, whilst we've a handle on "outgoings," another member of the team is accepting deliveries during the day and simply refilling the stock levels. They have another record of what deliveries they have received for that day. 
+Well, whilst we've got a handle on "outgoings," another member of the team is accepting deliveries during the day and simply refilling the stock levels. They have another record of what deliveries they have received for that day. 
 
 We've now reached our next problem.
 

@@ -106,7 +106,7 @@ Reflecting on the course, I would recommend doing a self-assessment prior to sta
 | 0 | No idea of product or concept, is this even spelt right? |
 | 1  | Heard of product or concept, haven't fully grasped it. |
 | 2  | Understand the product or concept or have seen it in use. |
-| 3 | Have used product or concept, can understand what it's at a basic level. |
+| 3 | Have used product or concept, can understand it at a basic level. |
 | 4 | Competent with product or concept, have used some more advanced features and could explain it to someone else. |
 | 5 | Have reached mastery level and manage/mentors others on the product or concept. |
  

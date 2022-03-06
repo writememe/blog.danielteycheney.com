@@ -48,7 +48,7 @@ _What does this all mean and why should I care?_
 
 By using largely trivial examples, I’m demonstrating that we all pick our problems. Whether consciously or not, we weigh up which of the problems are more appealing, and modify our behaviours and actions to align with our approach.
 
-This means that when we've more impactful problems presented in our lives, we've the ability to pick what problems we want to solve. Embracing this mindset allows you to take ownership over your career and work life. This double edged also means that you need to take accountability for how you got to this point, be it negative or positive.
+This means that when more impactful problems are presented in our lives, there is an ability for us to pick what problems we want to solve. Embracing this mindset allows you to take ownership over your career and work life. This double edged also means that you need to take accountability for how you got to this point, be it negative or positive.
 
 ## A tale of two people
 

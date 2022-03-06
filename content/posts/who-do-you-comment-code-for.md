@@ -20,7 +20,7 @@ As part of commenting my code, the very first person I comment code for is the f
 
 - I will forget the intent or context of the code, as naturally other important/non-important items will consume my short-term and long-term memory.
 - I can be distracted, either out of changing priorities, impromptu meetings or other life interruptions.
-- The *"I'll get around to commenting up my code"* won't happen or will have diminishing returns if isn't done within 24 to 48 hours of getting code working.
+- The *"I'll get around to commenting up my code"* won't happen or will have diminishing returns if it isn't done within 24 to 48 hours of getting code working.
 
 
 Whilst no-one can predict the future, we can take an educated guess that code will need to be maintained over the lifetime of its use. As such, future me is likely going to have to maintain it or hand it over to someone else.

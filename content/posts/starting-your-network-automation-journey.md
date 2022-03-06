@@ -20,7 +20,7 @@ In this post, I'll share some resources that I recommend, coupled with my experi
 It can be tempting to react to the latest hyped DSL, or using Go/Rust for network automation when someone posts about this on social media or Slack. You may feel
 anxious that you are being left behind and that your efforts into learning Python or Ansible is a waste of time.  
  
-What'sn't usually mentioned is that those people who most likely learned a language or a DSL and hit limitations pertinent to them. To know why one would change from Python to Go, you need to have a valid use case or business conditions to do so. Some examples of these may be:  
+What isn't usually mentioned is that those people who most likely learned a language or a DSL and hit limitations pertinent to them. To know why one would change from Python to Go, you need to have a valid use case or business conditions to do so. Some examples of these may be:  
  
 - Scaling and performance
 - Team composition and having access to highly skilled software engineers
