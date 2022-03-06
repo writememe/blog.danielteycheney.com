@@ -10,9 +10,9 @@ Recently, I've been working with some new programming languages. I've been looki
 
 Naturally, I had some questions about the language itself and why certain solutions were chosen over others.
 
-Sometimes, I received a clear, concise and articulated reason. Other times, this was met with *"I don't know why that's there, person x implemented it before I started"*. And sometimes, the programmer couldn't remember why that code they wrote was there...
+Sometimes, I received a clear, concise and articulated reason. Other times, this was met with *"I don't know why that's there, person x implemented it before I started."* And sometimes, the programmer couldn't remember why that code they wrote was there...
 
-These experiences aren't unique and I fully anticipate to have this happen again in future. So, it's with this that I asked myself, who do you comment code for?
+These experiences aren't unique and I fully anticipate to have this happen again in future. It's with this that I asked myself, who do you comment code for?
 
 ## Future me ##
 
@@ -20,12 +20,12 @@ As part of commenting my code, the very first person I comment code for is the f
 
 - I will forget the intent or context of the code, as naturally other important/non-important items will consume my short-term and long-term memory.
 - I can be distracted, either out of changing priorities, impromptu meetings or other life interruptions.
-- The *"I'll get around to commenting up my code"* won't happen or will have diminishing returns if it isn't done within 24-48 hours of getting code working.
+- The *"I'll get around to commenting up my code"* won't happen or will have diminishing returns if it isn't done within 24 to 48 hours of getting code working.
 
 
 Whilst no-one can predict the future, we can take an educated guess that code will need to be maintained over the lifetime of its use. As such, future me is likely going to have to maintain it or hand it over to someone else.
 
-- Following the path of least resistance, naturally future me will be asked about how the code works, why was solution x used instead of solution y and so on. Future me will appreciate commented code!
+- Following the path of least resistance, naturally future me will be asked about how the code works, why was solution x used instead of solution y. Future me will appreciate commented code!
 - Some solutions in the current code I'm writing are most likely going to be useful for future projects. Comments will allow me to efficiently assess whether this code could solve my future problem.
 - Future me will most likely have more experience with the language, and has probably discovered better solutions to the problems in the current code. Understanding what the original problem or intent is makes it easier to refactor.
 
@@ -34,7 +34,7 @@ Whilst no-one can predict the future, we can take an educated guess that code wi
 
 Next, I comment code for my fellow colleagues. The reasoning for commenting for them is:
 
-- Most programmers like to self-serve, by reading the code and getting an understanding of what is currently implemented. If it's not clear, they now need to involve me (the path of least resistance).
+- Most programmers like to self-serve, by reading the code and getting an understanding of what's currently implemented. If it's not clear, they now need to involve me (the path of least resistance).
 - If something sub-optimal or weird has been implemented, commenting can help clarify why it was done that way.
 - Most colleagues have different skill levels or perspectives, and may be able to suggest a better way to solve the same problem.
 - If the code needs to be handed over, it's more likely to be received more positively by your fellow colleagues.
@@ -83,7 +83,7 @@ def collect_getters(task, getter):
         return "AttributeError: Driver has no attribute"
 ```
 
-Hopefully, you can probably tell roughly what is the intent of the code, even if you are not proficient in Python.
+Hopefully, you can probably tell roughly what's the intent of the code, even if you aren't proficient in Python.
 
 Thanks for reading, and if you'd like to discuss, feel free to contact me on [Twitter](https://twitter.com/danielteycheney) or [LinkedIn](https://www.linkedin.com/in/danielfjteycheney/)
 

@@ -61,7 +61,7 @@ hugo
 
 ## Deployment to CloudFront
 
-To deploy the changes from the site to Cloudfront, a `Makefile` is used. Use the following command:
+To deploy the changes from the site to CloudFront, a `Makefile` is used. Use the following command:
 
 ```console
 make

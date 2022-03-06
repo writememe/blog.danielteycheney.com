@@ -15,7 +15,7 @@ I was about to embark on learning Ansible but after having a cursory look at thi
 
 Recently, I've had a chance to revisit Nornir and use it for a problem I am trying to solve.
 
-# What is Nornir?
+# What's Nornir?
 
 To quote the [official documentation](https://nornir.readthedocs.io/en/stable/tutorials/intro/overview.html):
 
@@ -36,7 +36,7 @@ required.
 
 # Why use Nornir?
 
-There are some differentiators which make Nornir a interesting use case.
+Some differentiators which make Nornir a interesting use case are as follows.
 
 ## 1) It's ***fast***
 
@@ -73,7 +73,7 @@ of existing Python modules to perform a task not provided by Nornir.
 
 ## 4) Did I mention it's written in Python?
 
-There is most likely someone in your company who has some Python knowledge who may not even be in networking or security. 
+It's most likely someone in your company who has some Python knowledge who may not even be in networking or security. 
 Starting a conversation about this project may help you share some common ground and break down some barriers. 
 
 If that doesn't work, there are many great resources for Python, with a network focus. I've listed a few below:

@@ -36,7 +36,7 @@ As you start out in an environment, it's common to come across using the followi
 - YAML files
 - JSON files
 
-These systems are a great starting point, and most people are used to interacting with these data formats. The advantages are that they are easy to setup and use. however validating data input, role-based access, representing relational data will become a problem.
+These systems are a great starting point, and most people are used to interacting with these data formats. The advantages are that they're easy to setup and use. however validating data input, role-based access, representing relational data will become a problem.
 
 #### Mid Maturity SoT Systems
 
@@ -115,7 +115,7 @@ Sure, we could normalise the values below to all lower-case, but it's not giving
 
 The SoT data is the actual data kept about the system of interest. Following on from the data model example above, we could store the data about the configuration snippet using the data model. 
 
-NOTE: We have added a top level key called `vlans` in participation of there being more than one VLAN:
+NOTE: We've added a top level key called `vlans` in participation of there being more than one VLAN:
 
 ```console
 {
@@ -150,12 +150,12 @@ But, you can have SoT data, without a defined SoT data model. In fact, many peop
 }
 ```
 
-As mentioned above, if you are using low maturity systems, these do not come with data model validation. You would have to insert another layer into your Source of Truth to validate data input, or worse, rely on people to get it right.
+As mentioned above, if you are using low maturity systems, these don't come with data model validation. You would have to insert another layer into your Source of Truth to validate data input, or worse, rely on people to get it right.
 
 
 ## Roles
 
-There are multiple roles which are interact with the SoT ecosystem which are described below.
+Multiple roles which interact with the SoT ecosystem which are described below.
 
 ### Consumer
 
@@ -176,7 +176,7 @@ Other responsibilities would be ensuring that the system is highly available, re
 
 The SoT Data Owner role is responsible for managing all governance aspects related to the SoT data. 
 
-Their primary responsibilities are to design and implement the data model. In addition to this, they are responsible for ensuring that there is governance and controls around maintaining the integrity of the SoT data.
+Their primary responsibilities are to design and implement the data model. In addition to this, they're responsible for ensuring that there is governance and controls around maintaining the integrity of the SoT data.
 
 If new SoT data storage or requirements are needed (for example recording VXLAN data), the SoT data owner would work with the relevant teams are ensure that the correct models are defined and implemented.
 
@@ -184,13 +184,13 @@ If new SoT data storage or requirements are needed (for example recording VXLAN 
 
 The contributor role is any individual or entity who contributes to the maintenance of SoT data. A contributor plays a pivotal role in ensuring that the "operational" aspects of the system such as SoT data accuracy is kept in good health.
 
-In addition to this, they are most likely to discover limitations of the system, such as no suitable places for new SoT data, or missing features of the SoT system.
+In addition to this, they're most likely to discover limitations of the system, such as no suitable places for new SoT data, or missing features of the SoT system.
 
 ### Roles Summary
 
 As you can imagine, it's common for some organisations to have an individual who fills multiple roles.
 
-For example, a network engineer is most likely going to be both a consumer and contributor.  However, a Service Desk member is most likely going to be a consumer.
+For example, a network engineer is most likely going to be both a consumer and contributor. However, a Service Desk member is most likely going to be a consumer.
 
 It's important to understand these roles, and ensure your organisation has delegated these roles appropriately. Without a formal delegation of these roles, often a SoT ecosystem will start out with great promise, only to be bogged down in inter-company politics and start to decay.
 

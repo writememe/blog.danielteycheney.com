@@ -25,12 +25,12 @@ This learning style appealed to me and the flexibility to get ahead of the sched
 
 ## Training Content ##
 
-The amount of content available in the course is substantial. There is the right level of detail and the course structure is sequenced in the most logical way to be as efficient as possible.
+The amount of content available in the course is substantial. It's at the right level of detail and the course structure is sequenced in the most logical way to be as efficient as possible.
 At the start, I couldn't see the forest for the trees, but I had so many "aha" moments where things I had been learning tied together just at the right time.
 
 If you are well versed in individual subjects, you can always skip those sections where it makes sense so you can use your time wisely.
 
-The quality of the content is at a very high standard. There are always relevant examples for key content and reference solutions to assist you in comprehending the topic(s).
+The quality of the content is at a very high standard. I found that there is always relevant examples for key content and reference solutions to assist you in comprehending the topic(s).
 I didn't notice any typos, poor formatting or disjointed presentations (think long pauses or things not working) which indicates that the content is mature and real care has been put in to producing quality content.
 
 ## Guest Speakers ##
@@ -53,7 +53,7 @@ You can always ask questions to the presenters after in the private Slack channe
 The sequencing of the assignments is logical and as the assignments progress, they increment appropriately in terms of effort and complexity.
 Each assignments builds on skills or solutions in previous assignments and then adds another layer of learning.
 
-Whether it's intentional or not, the assignments follow how one would develop automation solutions in the real world. That is:
+Whether it's intentional or not, the assignments follow how one would develop automation solutions in the real world in the following order:
 
 - Start with read-only tasks (audits, compliance, config retrieval)
 - Define a data model for your automation task(s)
@@ -91,7 +91,7 @@ This second point is going to be hard to appreciate until you've gone through th
 Trust me when I say that this is a great feature.
 
 Thirdly, the future guest speakers' content will be available to you for free. 
-So if you complete the course, then a great new open source product like [Nornir](https://nornir.readthedocs.io/en/stable/) is released, you are highly likely to gain access to presentations about it.
+If you complete the course, then a great new open source product like [Nornir](https://nornir.readthedocs.io/en/stable/) is released, you are highly likely to gain access to presentations about it.
 
 # Tips and Lessons for the Course #
 
@@ -106,7 +106,7 @@ Reflecting on the course, I would recommend doing a self-assessment prior to sta
 | 0 | No idea of product or concept, is this even spelt right? |
 | 1  | Heard of product or concept, haven't fully grasped it. |
 | 2  | Understand the product or concept or have seen it in use. |
-| 3 | Have used product or concept, can understand what it is at a basic level. |
+| 3 | Have used product or concept, can understand it at a basic level. |
 | 4 | Competent with product or concept, have used some more advanced features and could explain it to someone else. |
 | 5 | Have reached mastery level and manage/mentors others on the product or concept. |
  
@@ -216,8 +216,8 @@ This [minor issue](https://github.com/writememe/BlgNetAutoSol/tree/master/5_Logg
 
 ## Tip 8 - Finish with performing another self-assessment ##
 
-It's pretty easy to just move on with the next thing in life and not reflect upon what it is that you have learned. 
-So below is my self-assessment, this time after finishing the course:
+It's pretty easy to just move on with the next thing in life and not reflect upon what it's that you have learned. 
+Below is my self-assessment, this time after finishing the course:
 
 | Technology | Self-Rating | Comments |
 | ---- | -------- | -------- |

@@ -6,7 +6,7 @@ hidden = true
 
 ### About ###
 
-I’m Daniel and I live in Melbourne, Australia.  When I'm at work, I'm mostly involved in networking, automation, security and consulting. I'm always trying to find ways of being more accurate and efficient or helping others with the same endeavours.
+I’m Daniel and I live in Melbourne, Australia. When I'm at work, I'm mostly involved in networking, automation, security and consulting. I'm always trying to find ways of being more accurate and efficient or helping others with the same endeavours.
 
 Outside of work, I enjoy spending my time with my young son and supporting my partner in her career pursuits. 
 
