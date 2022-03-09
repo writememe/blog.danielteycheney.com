@@ -14,24 +14,6 @@ Clone this repo, plus the theme dependency using the following command:
 git clone --recursive https://github.com/writememe/blog.danielteycheney.com.git
 ```
 
-### Step 2 - Install requirements.txt
-
-Install the module required from the `requirements.txt` using the following command:
-
-```python
-pip install -r requirements.txt
-```
-
-### Step 3 - Configure the AWS CLI
-
-Configure the AWS CLI tool for use using the following command:
-
-```python
-aws configure
-```
-
-[Reference Documentation](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html)
-
 ## Changes
 
 Below are the ways to make standard changes to the website.
@@ -58,15 +40,3 @@ hugo
 ```
 
 [Reference Documentation](https://gohugo.io/getting-started/usage/#the-hugo-command)
-
-## Deployment to CloudFront
-
-To deploy the changes from the site to CloudFront, a `Makefile` is used. Use the following command:
-
-```console
-make
-```
-
-## TODO
-
-- [ ] Add automated spell checking to CI pipeline

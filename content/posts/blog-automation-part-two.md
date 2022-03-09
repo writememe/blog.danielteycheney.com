@@ -1,6 +1,6 @@
 +++
 title = "Automating blogging workflow - Part Two"
-date = 2022-02-25T13:49:54+11:00
+date = 2022-03-10T13:49:54+11:00
 tags = ["blog-as-code","cicd","hugo","github-actions"]
 categories = [""]
 draft = false
@@ -20,15 +20,13 @@ This would also mean that I didn't need Hugo or AWS Access Credentials on my loc
 
 As with all my other public projects, all I need on my local machine is a version of Git, my GitHub access credentials and an IDE of choice. This greatly simplifies setup and reduces security concerns.
 
-Finally, I went through and created a new identity and access management (IAM) user with the most restrictive access I could setup. Those access credentials are securely stored and used by GitHub Actions to perform the AWS tasks.
-
 ## First Iteration Workflow
 
 The end state at the end of the first iteration is shown below:
 
 ![Blog First Iteration](/images/img/Blog-First-Iteration.png)
 
-We will go through and describe the differences as compared to the initial workflow. Firstly, let's start off with the manual steps.
+I will go through and describe the differences as compared to the initial workflow. Firstly, let's start off with the manual steps.
 
 #### Write blog post and editorial review
 
@@ -56,13 +54,13 @@ Although I am reviewing and approving my own blog posts, it's still good practic
 
 #### Merge blog post into master branch
 
-After the pull request is approved, it can be merged into the `master` branch. Please note that the merge to `master` is going to be the [event which triggers](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) the Github actions workflow.
+After the pull request is approved, it can be merged into the `master` branch. Please note that the merge to `master` is going to be the [event which triggers](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) the GitHub Actions workflow.
 
 ### Automated steps
 
-As mentioned above, the build and deployment of my blog site as part of this first iteration is performed using Github Actions.
+As mentioned above, the build and deployment of my blog site as part of this first iteration is performed using GitHub Actions.
 
-I will refer to snippets of code, so please use the [copy on my Github repo](https://github.com/writememe/blog.danielteycheney.com/blob/master/.github/workflows/main.yml) which will display with line numbers included as a reference when following along:
+I will refer to snippets of code, so please use the [copy on my GitHub repo](https://github.com/writememe/blog.danielteycheney.com/blob/master/.github/workflows/main.yml) which will display with line numbers included as a reference when following along:
 
 ```yaml
 ---
@@ -131,13 +129,13 @@ As you may guess, this workflow won't be triggered on a push to any other branch
 
 Multiple variations of events and conditions can be set to suit your need, and in the final iteration we will see another example.
 
-In lines 9 to 10, we're configuring Github Actions to run the `job` named `build`. If you have complex sequencing, you could add this here. However, I only need the workflow with a single job:
+In lines 9 to 10, we're configuring GitHub Actions to run the `job` named `build`. If you have complex sequencing, you could add this here. However, I only need the workflow with a single job:
 
 ```yaml
 jobs:
     build:
 ```
-In lines 11 to 14, we're configuring Github Actions checkout the repo on a `ubuntu-latest` runner. If you've seen Github Actions files before, this is a standard pattern. However, lines 15 to 16 ensures that the runner also recursively include the Hugo theme for my website.
+In lines 11 to 14, we're configuring GitHub Actions checkout the repo on a `ubuntu-latest` runner. If you've seen GitHub Actions files before, this is a standard pattern. However, lines 15 to 16 ensures that the runner also recursively include the Hugo theme for my website.
 
 ```yaml
         name: Build and Deploy
@@ -151,7 +149,7 @@ Now, we've cloned the repo and have cloned the appropriate Hugo theme, we're rea
 
 #### Build static site
 
-To build the site using a Github actions runner, we need to download and install Hugo and then build the site.
+To build the site using a GitHub Actions runner, we need to download and install Hugo and then build the site.
 
 Firstly, from lines 17 to 24, we're downloading and installing Hugo:
 
@@ -224,7 +222,7 @@ Finally, in lines 39 to 41, I notify Google that a new copy of my site map is av
 
 As mentioned above, secrets are passed into the runner at runtime. In the diagram below, you can see the secrets configured on the repository:
 
-![Github Actions Secrets](/images/img/Blog-Github-Actions-Secrets.png)
+![GitHub Actions Secrets](/images/img/Blog-GitHub-Actions-Secrets.png)
 
 For more information on encrypted secrets, you can [consult the documentation.](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 
@@ -242,7 +240,7 @@ You can view the full history of the workflow at this [link.](https://github.com
 
 ## Conclusion
 
-In this first iteration, we've successfully automated the build and deployment of the site using Github Actions. In addition to this, we've ensured that deployments are only made from the `master` branch and that those changes should be reviewed via a pull request.
+In this first iteration, we've successfully automated the build and deployment of the site using GitHub Actions. In addition to this, we've ensured that deployments are only made from the `master` branch and that those changes should be reviewed via a pull request.
 
 We now no longer need local copies of AWS credentials, and have securely stored and passed those credentials in a secure manner.
 

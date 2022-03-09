@@ -7,7 +7,7 @@ config
 dfjt
 gcloud
 getters
-Github
+GitHub
 (?i)Hostname
 impactful
 incentivised

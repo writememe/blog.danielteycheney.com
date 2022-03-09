@@ -1,6 +1,6 @@
 +++
 title = "Automating blogging workflow - Part One"
-date = 2022-02-21T13:31:05+11:00
+date = 2022-03-09T13:31:05+11:00
 tags = ["blog-as-code","cicd","hugo","github-actions"]
 categories = [""]
 draft = false
@@ -56,7 +56,7 @@ Once the files are successfully synchronised, the next step was to invalidate th
 
 Finally, I also notify Google that a new copy of my site map is available to crawl so it can efficiently indexed and searched.
 
-> What's not shown in this workflow is that my site's blog post and configuration data is also stored on Github, to make version control and administration of the site more reliable.
+> What's not shown in this workflow is that my site's blog post and configuration data is also stored on GitHub, to make version control and administration of the site more reliable.
 
 ## Limitations
 
