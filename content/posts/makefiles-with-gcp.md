@@ -33,7 +33,7 @@ Therefore, I decided to solve this lab using a Makefile and executing commands u
 - Pre-installed tools for development such as vim, git and basic file editor
 - 5 GB of persistent disk storage, allowing for you to work on projects and pick up where you left off from another web browser
 - Intuitive upload/download file facility to get files in and out of your Cloud Shell
-- Run `gcloud` commands without the need to provide additional credentials or setup SSH keys against your project(s).
+- Run `gcloud` commands without the need to provide additional credentials or setup SSH keys against your projects.
 
 Azure have a similar web-based offering as well, although [slightly different](https://azure.microsoft.com/en-au/features/cloud-shell/).
 

@@ -6,3 +6,5 @@ venv/
 # Ignore the editorial style configuration files
 styles/write-good/*
 styles/Microsoft/*
+styles/Readability/*
+styles/Google/*

@@ -16,7 +16,7 @@ which you may face on your journey.
 In the previous post, we used an example scenario answering a single customer question. Whilst the post may have been lengthy, it was important to illustrate
 the foundational problems which need to be addressed. The reality is that customer questions become more nuanced and contextual as businesses are expected to deliver a more tailored and personalised services in the modern world.
 
-It's not reasonable to expect us to predict all the variation of customer questions, but we can expect that most of their questions will relate to the service(s) that your business offers. It's imperative that your business knows its business well, and can answer and adapt to customers needs to stay successful.
+It's not reasonable to expect us to predict all the variation of customer questions, but we can expect that most of their questions will relate to the services that your business offers. It's imperative that your business knows its business well, and can answer and adapt to customers needs to stay successful.
 
 As touched on in the previous post, the solution to customer questions are the aggregation of multiple business questions and those business questions spawn multiple Source of Truth queries. 
 
