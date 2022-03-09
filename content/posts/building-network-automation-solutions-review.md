@@ -221,7 +221,7 @@ Below is my self-assessment, this time after finishing the course:
 
 | Technology | Self-Rating | Comments |
 | ---- | -------- | -------- |
-| **Git**  | 4 | Used this significantly now, even have my own branching strategy for developing code during my assignments. I also raised a Github [issue](https://github.com/napalm-automation/napalm/issues/964) as well. |
+| **Git**  | 4 | Used this significantly now, even have my own branching strategy for developing code during my assignments. I also raised a GitHub [issue](https://github.com/napalm-automation/napalm/issues/964) as well. |
 | **Ansible**  | 4 | Have developed playbooks and have worked out how ways to optimise the speed of those playbooks.
 | **Jinja2**  | 4 | Used conditional Jinja2 statements and the IP address filter to dynamically allocate IP addressing. |
 | **YAML**  | 4 | Can read and understand YAML files. Used this knowledge on another project I'm developing using Nornir. |
@@ -229,7 +229,7 @@ Below is my self-assessment, this time after finishing the course:
 | **Data Models**  | 4 | Build quite a few data models, understanding the trade-offs between abstraction and complexity. |
 | **Continuous Integration Testing**  | 3 | TravisCI is used for all pull requests and merge requests in my repo. Only doing basic linting checks but now can understand the `.travis.yml` in other repos like the NAPALM repo. |
 
-Feel free to checkout my Github [repo](https://github.com/writememe/BlgNetAutoSol) to see some of the solutions I built.
+Feel free to checkout my GitHub [repo](https://github.com/writememe/BlgNetAutoSol) to see some of the solutions I built.
 
 
 # Summary #

@@ -261,7 +261,7 @@ I can see great potential in using them for future projects and in fact used one
 
 Below is a link to the above Makefile, along with a couple of other great resources:
 
-[My Lab solution with Makefile (Github)](https://github.com/writememe/gcp-cloud-labs/blob/master/01-basic-compute-lab/EXERCISE.md)
+[My Lab solution with Makefile (GitHub)](https://github.com/writememe/gcp-cloud-labs/blob/master/01-basic-compute-lab/EXERCISE.md)
 
 [Mindlessness - Makefile tutorial with walk-through](https://blog.mindlessness.life/2019/11/17/the-language-agnostic-all-purpose-incredible-makefile.html)
 
