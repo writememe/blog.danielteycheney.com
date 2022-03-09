@@ -30,7 +30,7 @@ At the start, I couldn't see the forest for the trees, but I had so many "aha" m
 
 If you are well versed in individual subjects, you can always skip those sections where it makes sense so you can use your time wisely.
 
-The quality of the content is at a very high standard. I found that there is always relevant examples for key content and reference solutions to assist you in comprehending the topic(s).
+The quality of the content is at a very high standard. I found that there is always relevant examples for key content and reference solutions to assist you in comprehending the topics.
 I didn't notice any typos, poor formatting or disjointed presentations (think long pauses or things not working) which indicates that the content is mature and real care has been put in to producing quality content.
 
 ## Guest Speakers ##
@@ -56,7 +56,7 @@ Each assignments builds on skills or solutions in previous assignments and then 
 Whether it's intentional or not, the assignments follow how one would develop automation solutions in the real world in the following order:
 
 - Start with read-only tasks (audits, compliance, config retrieval)
-- Define a data model for your automation task(s)
+- Define a data model for your automation tasks
 - Build something to automate changing network configuration or state
 - Validate what you built is successful, adding testing and logging to round out the solution
 

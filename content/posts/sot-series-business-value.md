@@ -171,7 +171,7 @@ Let's walk through the interactions and high-level steps at play:
 Below are some of the observations, we will start out with the obvious ones:
 
 - They have now optimised some of our data about the dishes we offer and removed the constraint from the process.
-- They have also done some work to remove the repeat counting of the same item(s) and return more time for cooking staff to focus on cooking.
+- They have also done some work to remove the repeat counting of the same items and return more time for cooking staff to focus on cooking.
 - In other words, they have rolled up some of the lower level details into "business answers."
 - Whilst the customer's question isn't answered immediately, the waiter can return a response in a shorter elapsed time, which marks an improvement.
 
