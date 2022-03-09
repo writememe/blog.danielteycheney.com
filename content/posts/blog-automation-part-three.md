@@ -1,14 +1,14 @@
 +++
-title = "Blog Automation Part Three"
+title = "Automating blogging workflow - Part Three"
 date = 2022-03-02T08:25:14+11:00
-tags = [""]
+tags = ["blog-as-code","cicd","hugo","github-actions"]
 categories = [""]
 draft = false
 +++
 
 # Introduction
 
-In this third blog post of [about the management of my site](https://blog.danielteycheney.com/tags/blog-as-code/), we will go through the first iteration of improvements.
+In this third blog post of [about the management of my site](https://blog.danielteycheney.com/tags/blog-as-code/), I will go through the first iteration of improvements.
 
 ## Background
 
@@ -88,7 +88,7 @@ On lines 1 to 3, I am documenting what this file is for. I like to do this where
 # Docs: https://docs.errata.ai/vale/config
 ```
 
-I will be using Vale styles to add editorial writing style and spelling checks to the site. Therefore, we need to tell Vale which directory the styles folders can be found as per lines 4 to 5:
+I will be using Vale styles to add editorial writing style and spelling checks to the site. Therefore, I need to tell Vale which directory the styles folders can be found as per lines 4 to 5:
 
 ```ini
 # Define the styles/ directory as the path to find styles configuration
@@ -102,7 +102,7 @@ Vale has three types of alert levels; `suggestions`, `warnings`, and `errors`. B
 MinAlertLevel = error
 ```
 
-Next, we want to specify a Vocab, which we can use to maintain custom exception words on lines 9 to 10. We will go into this later, but it's essentially a list of words which might not be in a standard dictionary, but you've whitelisted as legitimate words.
+Next, I want to specify a Vocab, which I can use to maintain custom exception words on lines 9 to 10. I will go into this later, but it's essentially a list of words which might not be in a standard dictionary, but you've whitelisted as legitimate words.
 
 ```ini
 # Specify a vocabulary called 'Blog'. This will contain any exception words.
@@ -310,15 +310,38 @@ On lines 25 to 28, we're addressing a limitation with the current workflow which
 
 To show that this workflow actually detects errors, I will deliberately misspell a word, not use proper spacing after a sentence, and not contract words correctly.
 
+```markdown
 Does not look like fun.
 The end.Is near.
 I can't spell chiar.
+```
 
-The outputs of the workflow are shown below:
+The summary workflow indicates that there was a failure and 4 errors:
+
+![Github Actions CI Failure](/images/img/Blog-Github-Actions-Vale-Failure-One.png)
+
+It also shows the issues detected by Vale:
+
+![Github Actions CI Failure - Detail](/images/img/Blog-Github-Actions-Vale-Failure-Two.png)
+
+Below is another example of the Vale action passing as expected:
+
+![Github Actions CI Pass](/images/img/Blog-Github-Actions-Vale-Failure-Three.png)
+
+I have now shown how the editorial review is automated using Github Actions and Vale. It should be noted that you can install Vale locally to perform these checks whilst developing blog posts. 
+
+For more information, please consult the documentation:
+
+https://docs.errata.ai/vale/install
 
 ### IAM Role
 
-Setup a new user with the following:
+As mentioned in the background, I sought to issue a new identity and access management (IAM) user with the most restrictive access as possible. Recapping what's needed to manage my site via Github Actions, it needs to perform the following actions:
+
+- Synchronise my static site files to my specific Amazon Simple Storage Service (S3) bucket
+- Invalidate the CloudFront cache after the new blog post is published for a specific distribution ID
+
+As a result, I have built the following IAM policy document which was associated to my new IAM user:
 
 
 ```json
@@ -370,7 +393,36 @@ The following substitutions were made on the JSON policy document:
 - `<ACCOUNT_ID>` - Is my account ID
 - `<DISTRIBUTION_ID>` - Is my CloudFront distribution ID
 
+The net result of this policy is that this user can't manage any other S3 buckets or distribution IDs not explicitly stated here, which aligns with the [least privilege access.](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)
 
-<!-- vale off -->
-We can turn checks off :)
-<!-- vale on -->
+
+### Github Branch Protection
+
+As mentioned earlier, Github has the ability to [protect certain branches.](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches). 
+
+On my repo, I've configured branch protection on the `master` to ensure:
+
+- All merges must be made via a pull request
+- Ensure that the `Vale` status check has passed before merging
+
+This is shown below in the following screenshots:
+
+![Branch Protection Summary](/images/img/Blog-Github-Actions-Branch-Protection-One.png)
+
+
+![Branch Protection Summary](/images/img/Blog-Github-Actions-Branch-Protection-Two.png)
+
+
+## Conclusion
+
+This concludes this blog post series into making improvements to the management of my site. Below are some of my concluding thoughts:
+
+It was a lot of content to cover, and upon reflection it shows that I've learned a significant amount in the last few years, other than just pure network automation.
+
+Vale is a promising tool, and could be used to manage internal or public documentation. The idea of enforcing an agreed style certainly has benefits of consistency and quality documentation.
+
+Whilst writing this blog post, I found over 130 errors with the current site content. Using automated tools to detect these errors has resulted in an uplift in quality of the site. I simply wouldn't have been able to perform this at a timely scale on 15,000 words.
+
+It also shows the value of maintaining data in version control, and the many benefits of using Git to manage that data.
+
+Thank you for taking the time to read this and I hope this is of value to you.

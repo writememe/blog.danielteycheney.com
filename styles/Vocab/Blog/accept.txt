@@ -12,6 +12,7 @@ Github
 impactful
 incentivised
 Makefil(e|es)
+(i|e|jun|nx)os
 Mihai
 minimalistic
 nautobot
@@ -31,16 +32,3 @@ Teodosiu
 txt
 unticked
 upskill
-(i|e|jun|nx)os
-
-
-
-
-
-
-
-
-
-
-
-
