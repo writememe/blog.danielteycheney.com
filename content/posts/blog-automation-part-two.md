@@ -222,7 +222,7 @@ Finally, in lines 39 to 41, I notify Google that a new copy of my site map is av
 
 As mentioned above, secrets are passed into the runner at runtime. In the diagram below, you can see the secrets configured on the repository:
 
-![GitHub Actions Secrets](/images/img/Blog-GitHub-Actions-Secrets.png)
+![GitHub Actions Secrets](/images/img/Blog-Github-Actions-Secrets.png)
 
 For more information on encrypted secrets, you can [consult the documentation.](https://docs.github.com/en/actions/security-guides/encrypted-secrets)
 
