@@ -1,6 +1,6 @@
 +++
 title = "Automating blogging workflow - Part Three"
-date = 2022-03-13T08:25:14+11:00
+date = 2022-03-13T06:10:14+11:00
 tags = ["blog-as-code","cicd","hugo","github-actions"]
 categories = [""]
 draft = false
