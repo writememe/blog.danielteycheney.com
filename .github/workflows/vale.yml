@@ -12,7 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Vale - Editorial Review
-        uses: errata-ai/vale-action@v2.0.1
+        # uses: errata-ai/vale-action@v2.0.1
+        uses: errata-ai/vale-action@reviewdog
+
         with:
           # Use Vale, write-good, Microsoft, Readability and Google styles for editorial style review.
           styles: |
