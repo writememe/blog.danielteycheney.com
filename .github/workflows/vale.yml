@@ -17,11 +17,11 @@ jobs:
 
         with:
           # Use Vale, write-good, Microsoft, Readability and Google styles for editorial style review.
-          styles: |
-            https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
-            https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
-            https://github.com/errata-ai/Google/releases/latest/download/Google.zip
-            https://github.com/errata-ai/Readability/releases/latest/download/Readability.zip
+          # styles: |
+          #   https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
+          #   https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
+          #   https://github.com/errata-ai/Google/releases/latest/download/Google.zip
+          #   https://github.com/errata-ai/Readability/releases/latest/download/Readability.zip
           files: content/
         env:
           # Required, set by GitHub actions automatically:
