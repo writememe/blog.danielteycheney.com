@@ -7,6 +7,7 @@ on: # yamllint disable rule:truthy
 
 jobs:
   prose:
+    name: Perform editorial review
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,13 +17,9 @@ jobs:
         uses: errata-ai/vale-action@reviewdog
 
         with:
-          # Use Vale, write-good, Microsoft, Readability and Google styles for editorial style review.
-          # styles: |
-          #   https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
-          #   https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
-          #   https://github.com/errata-ai/Google/releases/latest/download/Google.zip
-          #   https://github.com/errata-ai/Readability/releases/latest/download/Readability.zip
           files: content/
+          fail_on_error: true
+          reporter: github-pr-review
         env:
           # Required, set by GitHub actions automatically:
           # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
