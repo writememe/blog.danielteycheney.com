@@ -18,7 +18,6 @@ Secondly, I wanted to issue a new identity and access management (IAM) user with
 
 Finally, although not an explicit goal, I wanted to optimise the GitHub Actions configuration to use branch protection features to prevent deviations from the process and remove any duplication of jobs.
 
-
 ## Final Iteration Workflow
 
 The end state at the end of the final iteration is shown below:
@@ -29,7 +28,7 @@ Note that the only difference to the workflow is the automation of the editorial
 
 ### Editorial Review
 
-As mentioned above, I have decided to automate the  spelling, grammar and writing style checks using Vale. 
+As mentioned above, I have decided to automate the spelling, grammar and writing style checks using Vale.
 
 Vale is a command-line tool that brings code-like linting to prose, It's written in Golang and works on multiple platforms.
 
@@ -39,7 +38,7 @@ Some of the key features of using Vale are:
 - Flexible extension system, so that you can enforce an editorial writing style
 - Easy-to-install and comes in a standalone binary, supported on multiple platforms
 
-The GitHub documentation for Vale has a [functionality table](https://github.com/errata-ai/vale/#functionality) which explains it benefits against alternatives. 
+The GitHub documentation for Vale has a [functionality table](https://github.com/errata-ai/vale/#functionality) which explains it benefits against alternatives.
 
 I will now go through the components which comprise the Vale linting checks.
 
@@ -47,9 +46,9 @@ I will now go through the components which comprise the Vale linting checks.
 
 The main components of Vale are as follows:
 
-- [*Configuration File*](https://docs.errata.ai/vale/config) - An INI configuration file where you can configure core settings, format associations, and format-specific settings.
-- [*Styles*](https://docs.errata.ai/vale/styles) - A powerful extension system to fully customise your own writing style or spelling checks.
-- [*Vocab*](https://docs.errata.ai/vale/vocab) - A way to maintain custom lists of terminology independent of your styles.
+- [_Configuration File_](https://docs.errata.ai/vale/config) - An INI configuration file where you can configure core settings, format associations, and format-specific settings.
+- [_Styles_](https://docs.errata.ai/vale/styles) - A powerful extension system to fully customise your own writing style or spelling checks.
+- [_Vocab_](https://docs.errata.ai/vale/vocab) - A way to maintain custom lists of terminology independent of your styles.
 
 I will now expand on how each component is configured for my site.
 
@@ -123,7 +122,6 @@ BasedOnStyles = Vale, write-good, Microsoft, Readability, Google
 
 Finally, the [Google writing style doesn't like the usage of exclamation points in text](https://developers.google.com/style/exclamation-points). Note that this is configured in the [Google Exclamation YAML configuration file](https://github.com/errata-ai/Google/blob/17be3489c9a9cf8ce451949af09c8f6f5642afa4/Google/Exclamation.yml) for reference. I like to use exclamation points, so I've tuned the alert level down from `error` to `warning` on lines 17 to 18.
 
-
 ```ini
 # Tune the usage of exclamation in text down to 'warning' level.
 Google.Exclamation = warning
@@ -147,7 +145,7 @@ action:
   name: edit
   params:
     - remove
-    - '.?!'
+    - ".?!"
 tokens:
   - '[a-z0-9][.?!](?:\s|$)'
 ```
@@ -181,7 +179,7 @@ styles/
 Within the `accept.txt` file, you can add individual entries or use regular expression to match multiple accepted words. A truncated output is shown below:
 
 ```bash
-head -n 20 styles/Vocab/Blog/accept.txt 
+head -n 20 styles/Vocab/Blog/accept.txt
 (?i)Ansible
 automators
 blowback
@@ -203,7 +201,8 @@ nautobot
 (?i)netbox
 (?i)netmiko
 ```
-These regular expression patterns or words are added to every exception list in all styles listed in `BasedOnStyles`, meaning that you now only need to update your project's vocabulary to customize third-party styles (rather than the styles themselves). 
+
+These regular expression patterns or words are added to every exception list in all styles listed in `BasedOnStyles`, meaning that you now only need to update your project's vocabulary to customize third-party styles (rather than the styles themselves).
 
 The full Vocab file can be found at this [link.](https://github.com/writememe/blog.danielteycheney.com/blob/master/styles/Vocab/Blog/accept.txt)
 
@@ -213,36 +212,34 @@ After going through the main components which make up Vale, I will now show how 
 
 I will refer to snippets of code in the GitHub Actions workflow file, so please use the [copy on my GitHub repo](https://github.com/writememe/blog.danielteycheney.com/blob/master/.github/workflows/vale.yml) which will display with line numbers included as a reference when following along:
 
-
 ```yaml
 ---
 name: Vale - Editorial Review
-on:  # yamllint disable rule:truthy
-    push:
-        branches:
-            - feature/*
+on: # yamllint disable rule:truthy
+  push:
+    branches:
+      - feature/*
 
 jobs:
-    prose:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@master
-            - name: Vale - Editorial Review
-              uses: errata-ai/vale-action@v1.5.0
-              with:
-                  # Use Vale, write-good, Microsoft, Readability and Google styles for editorial style review.
-                  styles: |
-                      https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
-                      https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
-                      https://github.com/errata-ai/Google/releases/latest/download/Google.zip
-                      https://github.com/errata-ai/Readability/releases/latest/download/Readability.zip
-                  files:
-                      content/
-              env:
-                  # Required, set by GitHub actions automatically:
-                  # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
-                  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Vale - Editorial Review
+        uses: errata-ai/vale-action@v1.5.0
+        with:
+          # Use Vale, write-good, Microsoft, Readability and Google styles for editorial style review.
+          styles: |
+            https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
+            https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
+            https://github.com/errata-ai/Google/releases/latest/download/Google.zip
+            https://github.com/errata-ai/Readability/releases/latest/download/Readability.zip
+          files: content/
+        env:
+          # Required, set by GitHub actions automatically:
+          # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 ```
 
 On line 2, I name the workflow `Vale - Editorial Review` so that it's different from the other workflow used to build and deploy the site.
@@ -260,26 +257,23 @@ On lines 8 to 9, we're configuring GitHub Actions to run the `job` named `prose`
 
 ```yaml
 jobs:
-    prose:
+  prose:
 ```
 
 On lines 10 to 13, we're performing this action on an `ubuntu-latest` runner and checking out the repositories code.
 
-
 ```yaml
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout
-              uses: actions/checkout@master
-
+runs-on: ubuntu-latest
+steps:
+  - name: Checkout
+    uses: actions/checkout@master
 ```
 
 On lines 14 to 15, I am using the [official GitHub Action for Vale](https://github.com/errata-ai/vale-action), to simplify my setup and configuration:
 
-
 ```yaml
-            - name: Vale - Editorial Review
-              uses: errata-ai/vale-action@v1.5.0
+- name: Vale - Editorial Review
+  uses: errata-ai/vale-action@v1.5.0
 ```
 
 The final lines of code are inputs to the GitHub Action, which are described more below.
@@ -287,29 +281,28 @@ The final lines of code are inputs to the GitHub Action, which are described mor
 On lines 16 to 22, I am configuring the runner to use the four non-default writing styles when performing the Vale checks:
 
 ```yaml
-              with:
-                  # Use Vale, write-good, Microsoft, Readability and Google styles for editorial style review.
-                  styles: |
-                      https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
-                      https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
-                      https://github.com/errata-ai/Google/releases/latest/download/Google.zip
-                      https://github.com/errata-ai/Readability/releases/latest/download/Readability.zip
+with:
+  # Use Vale, write-good, Microsoft, Readability and Google styles for editorial style review.
+  styles: |
+    https://github.com/errata-ai/Microsoft/releases/latest/download/Microsoft.zip
+    https://github.com/errata-ai/write-good/releases/latest/download/write-good.zip
+    https://github.com/errata-ai/Google/releases/latest/download/Google.zip
+    https://github.com/errata-ai/Readability/releases/latest/download/Readability.zip
 ```
 
-On lines 23 to 24, we'ew specifying to only perform the checks on the top level `content/` directory. This is where the Markdown files for the site are hosted:
+On lines 23 to 24, we're specifying to only perform the checks on the top level `content/` directory. This is where the Markdown files for the site are hosted:
 
 ```yaml
-                  files:
-                      content/
+files: content/
 ```
 
 On lines 25 to 28, we're addressing a limitation with the current workflow which is documented [here.](https://github.com/errata-ai/vale-action#limitations)
 
 ```yaml
-              env:
-                  # Required, set by GitHub actions automatically:
-                  # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
-                  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+env:
+  # Required, set by GitHub actions automatically:
+  # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#about-the-github_token-secret
+  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 ```
 
 #### CI Examples
@@ -336,7 +329,7 @@ Below is another example of the Vale action passing as expected:
 
 You can view the full history of the workflow at this [link.](https://github.com/writememe/blog.danielteycheney.com/actions/workflows/vale.yml)
 
-I have now shown how the editorial review is automated using GitHub Actions and Vale. It should be noted that you can install Vale locally to perform these checks whilst developing blog posts. 
+I have now shown how the editorial review is automated using GitHub Actions and Vale. It should be noted that you can install Vale locally to perform these checks whilst developing blog posts.
 
 For more information, please consult the documentation:
 
@@ -353,47 +346,46 @@ Recapping what's needed to manage my site via GitHub Actions, it needs to perfor
 
 As a result, I have built the following IAM policy document which was associated to my new IAM user:
 
-
 ```json
 {
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "VisualEditor0",
-            "Effect": "Allow",
-            "Action": [
-                "cloudfront:ListDistributions",
-                "cloudfront:ListStreamingDistributions"
-            ],
-            "Resource": "*"
-        },
-        {
-            "Sid": "VisualEditor1",
-            "Effect": "Allow",
-            "Action": [
-                "s3:DeleteObjectVersion",
-                "cloudfront:GetInvalidation",
-                "s3:ListBucket",
-                "cloudfront:CreateInvalidation",
-                "s3:PutObject",
-                "s3:GetObjectAcl",
-                "s3:GetObject",
-                "cloudfront:GetDistribution",
-                "cloudfront:GetStreamingDistribution",
-                "cloudfront:ListInvalidations",
-                "s3:DeleteObject",
-                "cloudfront:GetDistributionConfig",
-                "s3:PutObjectAcl",
-                "s3:GetObjectVersion"
-            ],
-            "Resource": [
-                "arn:aws:s3:::<S3_BUCKET_NAME>",
-                "arn:aws:s3:::<S3_BUCKET_NAME>/*",
-                "arn:aws:cloudfront::<ACCOUNT_ID>:distribution/<DISTRIBUTION_ID>",
-                "arn:aws:cloudfront::<ACCOUNT_ID>:streaming-distribution/<DISTRIBUTION_ID>"
-            ]
-        }
-    ]
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "VisualEditor0",
+      "Effect": "Allow",
+      "Action": [
+        "cloudfront:ListDistributions",
+        "cloudfront:ListStreamingDistributions"
+      ],
+      "Resource": "*"
+    },
+    {
+      "Sid": "VisualEditor1",
+      "Effect": "Allow",
+      "Action": [
+        "s3:DeleteObjectVersion",
+        "cloudfront:GetInvalidation",
+        "s3:ListBucket",
+        "cloudfront:CreateInvalidation",
+        "s3:PutObject",
+        "s3:GetObjectAcl",
+        "s3:GetObject",
+        "cloudfront:GetDistribution",
+        "cloudfront:GetStreamingDistribution",
+        "cloudfront:ListInvalidations",
+        "s3:DeleteObject",
+        "cloudfront:GetDistributionConfig",
+        "s3:PutObjectAcl",
+        "s3:GetObjectVersion"
+      ],
+      "Resource": [
+        "arn:aws:s3:::<S3_BUCKET_NAME>",
+        "arn:aws:s3:::<S3_BUCKET_NAME>/*",
+        "arn:aws:cloudfront::<ACCOUNT_ID>:distribution/<DISTRIBUTION_ID>",
+        "arn:aws:cloudfront::<ACCOUNT_ID>:streaming-distribution/<DISTRIBUTION_ID>"
+      ]
+    }
+  ]
 }
 ```
 
@@ -405,10 +397,9 @@ The following substitutions were made on the JSON policy document:
 
 The net result of this policy is that this user can't manage any other S3 buckets or distribution IDs not explicitly stated here, which aligns granting [least privilege access.](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege)
 
-
 ### GitHub Branch Protection
 
-As mentioned earlier, GitHub has the ability to [protect certain branches.](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches). 
+As mentioned earlier, GitHub has the ability to [protect certain branches.](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/about-protected-branches).
 
 On my repo, I've configured branch protection on the `master` to ensure:
 
@@ -419,9 +410,7 @@ This is shown below in the following screenshots:
 
 ![Branch Protection Summary](/images/img/Blog-Github-Actions-Branch-Protection-One.png)
 
-
 ![Branch Protection Summary](/images/img/Blog-Github-Actions-Branch-Protection-Two.png)
-
 
 ## Conclusion
 
