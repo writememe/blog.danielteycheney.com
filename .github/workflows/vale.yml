@@ -13,12 +13,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
       - name: Vale - Editorial Review
-        # uses: errata-ai/vale-action@v2.0.1
         uses: errata-ai/vale-action@reviewdog
 
         with:
           files: content/
+          # Fail pipeline when errors are found
           fail_on_error: true
+          # Ensure that vale report correctly displays on Github PR
           reporter: github-check
         env:
           # Required, set by GitHub actions automatically:
