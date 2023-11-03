@@ -2,4 +2,4 @@ public/
 *.code-workspace
 venv/
 *.dic
-bin/*
+bin
