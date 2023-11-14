@@ -10,9 +10,9 @@ draft = false
 
 I first acquired a Cisco certification back in 2004, and have held a professional level certification since 2014.
 
-As I mentioned when interviewed for [The Art of Network Engineering](https://artofnetworkengineering.com/2020/12/09/ep-21-he-automates-a-lan-down-unda/) podcast, I wouldn’t have got into networking or IT for that matter without the Cisco Networking Academy which I completed in high school. Being Cisco certified has allowed me to forge a career and progress through roles with having it. I learned a significant amount of knowledge, and will look fondly upon doing some of the exams like the old TSHOOT exam.
+As I mentioned when interviewed for [The Art of Network Engineering](https://artofnetworkengineering.com/2020/12/09/ep-21-he-automates-a-lan-down-unda/) podcast, I wouldn’t have got into networking or IT for that matter without the Cisco Networking Academy which I completed in high school. Being Cisco certified has allowed me to forge a career and progress through roles with having them. I learned a significant amount of knowledge, and will look fondly upon doing some of the exams like the old TSHOOT exam.
 
-But both myself and the industry has changed during my first certification.
+But both myself and the industry has changed during the period since my first certification.
 
 ## Where's the industry at now?
 
@@ -65,7 +65,7 @@ This leaves us with the individuals, who use certifications some or all of the f
 - A third-party verification of their skills, to current or future employers
 - A bargaining tool for increased remuneration or benefits for current or future employers
 - A structured way to learn a product or service, and increase their technical and operational skills
-- An indicator to measure up someone’s initial technical skills, or provide their skills to fellow colleagues
+- An indicator to measure up someone’s initial technical skills, or display their skills to fellow colleagues
 
 ### My thoughts
 
