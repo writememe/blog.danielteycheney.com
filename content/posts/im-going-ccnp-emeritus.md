@@ -22,13 +22,13 @@ As a result, holding a Cisco certification has less gravitas that it one did. On
 
 The last Cisco certification I gained was the Cisco Certified DevNet Associate in early 2021. I thought that the exam was fair in terms of assessing your knowledge of the topics.
 
-I was disappointed, but not surprised to see a disproportionate amount of Cisco product focused automation knowledge which had to be learned in order to pass the exam. In my view, this time could have been better allocated more generalised concepts like data modelling, data validation, inventory management and other concepts transferrable across their journey as a practioner.
+I was disappointed, but not surprised to see a disproportionate amount of Cisco product focused automation knowledge which had to be learned in order to pass the exam. In my view, this time could have been better allocated more generalised concepts like data modelling, data validation, inventory management and other concepts transferrable across their journey as a practitioner.
 
 Cisco isn't alone in promoting products through certifications, and I’m not naive to think it will change for them or other certification providers, which gets us to the topic of certifications.
 
 ## What are we trying to achieve with certifications?
 
-I’ve thought about this topic for some time, it’s clear that their are three parties involved in the certification ecosystem:
+I’ve thought about this topic for some time, it’s clear that there are three parties involved in the certification ecosystem:
 
 1. Certification provider
 2. Company
