@@ -43,3 +43,4 @@ APIs
 (group|host)_vars
 UPSs
 else's
+clickbait
