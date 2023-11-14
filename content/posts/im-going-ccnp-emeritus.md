@@ -1,6 +1,6 @@
 +++
 title = "I'm going CCNP emeritus"
-date = 2023-11-13T20:45:41+11:00
+date = 2023-11-14T16:15:41+11:00
 tags = [""]
 categories = [""]
 draft = false
