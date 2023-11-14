@@ -18,7 +18,7 @@ But both myself and the industry has changed during the period since my first ce
 
 The current networking landscape and it’s breadth is significantly larger and more complex compared to when I started my networking journey. The amount of network vendors and constructs has resulted in Cisco losing its market share and control over the network industry.
 
-As a result, holding a Cisco certification has less gravitas that it one did. One has to question, whether making a time or financial investment in Cisco networking certifications are going to give you that return on that investment.
+As a result, holding a Cisco certification has less gravitas than it once did. One has to question, whether making a time or financial investment in Cisco networking certifications are going to give you that return on that investment.
 
 The last Cisco certification I gained was the Cisco Certified DevNet Associate in early 2021. I thought that the exam was fair in terms of assessing your knowledge of the topics.
 
