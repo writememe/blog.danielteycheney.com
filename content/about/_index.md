@@ -44,6 +44,12 @@ If you'd like to contact me about any opportunities, please feel free to read my
 
 [Online Resume](https://registry.jsonresume.org/writememe)
   
+### CV/Resume ###
+
+If you'd like to contact me about any opportunities, please feel free to read my resume and get in touch.
+
+[Online Resume](https://registry.jsonresume.org/writememe)
+  
 ### Disclaimer ###
 
 All thoughts/comments/attempts at humour are my own. Nothing written here is the view of my employer.
