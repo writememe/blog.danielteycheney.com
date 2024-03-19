@@ -38,12 +38,7 @@ Below are some of weird/interesting experiences I've had in my career:
 - Replaced and installed UPSs in a variety of "network racks"  
 - Seen a lot of good ways to build and operate networks...and some bad ones  
 
-### CV/Resume ###
-
-If you'd like to contact me about any opportunities, please feel free to read my resume and get in touch.
-
-[Online Resume](https://registry.jsonresume.org/writememe)
-  
+    
 ### CV/Resume ###
 
 If you'd like to contact me about any opportunities, please feel free to read my resume and get in touch.
