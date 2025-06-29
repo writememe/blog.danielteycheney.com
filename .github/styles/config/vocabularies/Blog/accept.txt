@@ -46,3 +46,8 @@ else's
 clickbait
 Reframing
 Proxying
+(?i)Wordpress
+(?i)Openpyxl
+(?i)Nornirs
+(?i)Junos
+(?i)EOS
