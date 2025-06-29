@@ -1,6 +1,6 @@
 # blog.danielteycheney.com
 
-This repository is used to maintain my blog.
+This repository is used to maintain my blog. [https://blog.danielteycheney.com/](https://blog.danielteycheney.com/)
 
 ## Setup
 
