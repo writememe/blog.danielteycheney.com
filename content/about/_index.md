@@ -19,11 +19,11 @@ Whether I'm working or not, I try to live life with a value-driven approach and 
 
 Below are some points about my career:
 
-- Worked in IT for 19 years  
+- Worked in IT for 20 years  
 - Have worked in Service Desk Support, Desktop Support and IT Project Management before starting in networking  
 - 12 years in networking  
 - 5 years in network consulting
-- Last 3 years in cloud and network automation
+- Last 4 years in cloud and network automation
 - First started networking by completing the Cisco Networking Academy course in 2002 and 2003 at high school  
 - Lived in London for 1.5 years  
   
